@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23F326C9-D607-4748-B49D-102431F59C03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BigJetGas</RootNamespace>
+    <AssemblyName>BigJetGas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.96.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.96.0\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.78\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper.SimpleCRUD, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.SimpleCRUD.2.3.0\lib\netstandard2.0\Dapper.SimpleCRUD.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.Charts.v13.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.Data.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.Office.v13.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.PivotGrid.v13.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.Printing.v13.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.RichEdit.v13.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.Sparkline.v13.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.Utils.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.XtraBars.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.XtraCharts.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.XtraEditors.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.XtraGrid.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.XtraLayout.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.XtraPrinting.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.XtraReports.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DllsDev\DevExpress.XtraTreeList.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.16.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.16.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.1.0\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles\Cadastros\CtrlCadastroCliente.cs" />
+    <Compile Include="Controles\Cadastros\CtrlCadastroMercadoria.cs" />
+    <Compile Include="Controles\Cadastros\RegraMercadoria.cs" />
+    <Compile Include="Controles\Cadastros\RegraCliente.cs" />
+    <Compile Include="Controles\ExecCMD.cs" />
+    <Compile Include="Controles\Impressao\ModelCidade.cs" />
+    <Compile Include="Controles\Movimentacao\CtrlCancelamentoSaida.cs" />
+    <Compile Include="Controles\Utilitarios\CtrlConfiguracao.cs" />
+    <Compile Include="Controles\Impressao\CtrlImpressao.cs" />
+    <Compile Include="Controles\Impressao\ImpressaoLPT.cs" />
+    <Compile Include="Controles\Impressao\ImprimeTexto.cs" />
+    <Compile Include="Controles\Movimentacao\CtrlSaidaMercadoria.cs" />
+    <Compile Include="Controles\Movimentacao\CtrlAddMercadoria.cs" />
+    <Compile Include="Controles\Movimentacao\RegraAddEntrada.cs" />
+    <Compile Include="Controles\Pesquisa\CtrlPesquisar.cs" />
+    <Compile Include="Controles\CtrlPrincipal.cs" />
+    <Compile Include="Controles\Movimentacao\CtrlEntrada.cs" />
+    <Compile Include="Controles\Movimentacao\CtrlSaida.cs" />
+    <Compile Include="Controles\Utilitarios\CtrlImportacao.cs" />
+    <Compile Include="Enumeradores\EOperacaoMovimento.cs" />
+    <Compile Include="Enumeradores\EStatusMovimento.cs" />
+    <Compile Include="Enumeradores\EUnidadeMedida.cs" />
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal2.Designer.cs">
+      <DependentUpon>FrmPrincipal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Cadastros\IMercadoriaCadastroView.cs" />
+    <Compile Include="Interface\Cadastros\IClienteCadastroView.cs" />
+    <Compile Include="Interface\Movimentacao\ICancelamentoSaida.cs" />
+    <Compile Include="Interface\Utilitarios\IConfiguracao.cs" />
+    <Compile Include="Interface\Movimentacao\IAddEntradaMercadoria.cs" />
+    <Compile Include="Interface\Movimentacao\IAddVendaMercadoria.cs" />
+    <Compile Include="Interface\Movimentacao\IMovimentacaoEntradaView.cs" />
+    <Compile Include="Interface\Movimentacao\IMovimentacaoSaidaView.cs" />
+    <Compile Include="Interface\Pesquisa\IModeloGenerico.cs" />
+    <Compile Include="Interface\Pesquisa\IPesquisar.cs" />
+    <Compile Include="Interface\IPrincipalView.cs" />
+    <Compile Include="Interface\Utilitarios\IImportador.cs" />
+    <Compile Include="Menus\Cadastros\FrmCadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Cadastros\FrmCadastroCliente.Designer.cs">
+      <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Cadastros\FrmCadastroMercadorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Cadastros\FrmCadastroMercadorias.Designer.cs">
+      <DependentUpon>FrmCadastroMercadorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Movimentacao\FrmAddMercadoriaSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Movimentacao\FrmAddMercadoriaSaida.Designer.cs">
+      <DependentUpon>FrmAddMercadoriaSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Movimentacao\FrmAddMercadoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Movimentacao\FrmAddMercadoria.Designer.cs">
+      <DependentUpon>FrmAddMercadoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Movimentacao\FrmCancelamentoSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Movimentacao\FrmCancelamentoSaida.Designer.cs">
+      <DependentUpon>FrmCancelamentoSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Movimentacao\FrmSaidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Movimentacao\FrmSaidas.Designer.cs">
+      <DependentUpon>FrmSaidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Utilitarios\FrmConfiguracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Utilitarios\FrmConfiguracoes.Designer.cs">
+      <DependentUpon>FrmConfiguracoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Utilitarios\FrmImportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Utilitarios\FrmImportador.Designer.cs">
+      <DependentUpon>FrmImportador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Historico\ModelHistoricoCliente.cs" />
+    <Compile Include="Modelos\Historico\ModelHistoricoMercadoria.cs" />
+    <Compile Include="Modelos\ModelImpressora.cs" />
+    <Compile Include="Modelos\ModelConfiguracao.cs" />
+    <Compile Include="Modelos\ModelEmpresa.cs" />
+    <Compile Include="Modelos\ModelImpressao.cs" />
+    <Compile Include="Modelos\ModelMercadoria.cs" />
+    <Compile Include="Modelos\ModelCliente.cs" />
+    <Compile Include="Modelos\ModelConfiguracaoBancoDados.cs" />
+    <Compile Include="Modelos\ModelMercadoriaBase.cs" />
+    <Compile Include="Modelos\ModeloCidade.cs" />
+    <Compile Include="Menus\Movimentacao\FrmEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Movimentacao\FrmEntradas.Designer.cs">
+      <DependentUpon>FrmEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Movimentacao\DapperDinamico.cs" />
+    <Compile Include="Modelos\Movimentacao\ModelItemMovimentacao.cs" />
+    <Compile Include="Modelos\Movimentacao\ModelMovimentacaoPeriodo.cs" />
+    <Compile Include="Modelos\Movimentacao\ModelMovimentacao.cs" />
+    <Compile Include="Pesquisar\FrmPesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisar\FrmPesquisar.Designer.cs">
+      <DependentUpon>FrmPesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorio\Controller\Abstrato\ARelatorios.cs" />
+    <Compile Include="Relatorio\Controller\Abstrato\VerificaRelatorioVazio.cs" />
+    <Compile Include="Relatorio\Controller\Cadastros\CtrlRelatorio01ListaCliente.cs" />
+    <Compile Include="Relatorio\Controller\Cadastros\CtrlRelatorio02ListaMercadorias.cs" />
+    <Compile Include="Relatorio\Controller\CtrlRelatorios.cs" />
+    <Compile Include="Relatorio\Controller\Saida\CtrlRelatorio04VendaMercadoriaPeriodo.cs" />
+    <Compile Include="Relatorio\Controller\Entrada\CtrlRelatorio03EntradaNotas.cs" />
+    <Compile Include="Relatorio\CtrlFiltros\Abstrato\ACtrlFiltroRelatorio.cs" />
+    <Compile Include="Relatorio\CtrlFiltros\Cadastros\BehaviorFiltro001.cs" />
+    <Compile Include="Relatorio\CtrlFiltros\Cadastros\BehaviorFiltro002.cs" />
+    <Compile Include="Relatorio\CtrlFiltros\Entrada\BehaviorFiltro003.cs" />
+    <Compile Include="Relatorio\CtrlFiltros\Saida\BehaviorFiltro004.cs" />
+    <Compile Include="Relatorio\Enumeradores\EAtivo.cs" />
+    <Compile Include="Relatorio\Enumeradores\ERelatorio.cs" />
+    <Compile Include="Relatorio\Filtros\Abstrato\FrmFiltro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Abstrato\FrmFiltro.Designer.cs">
+      <DependentUpon>FrmFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Abstrato\UCBotoesFiltro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Abstrato\UCBotoesFiltro.Designer.cs">
+      <DependentUpon>UCBotoesFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Cadastro\UCFiltro001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Cadastro\UCFiltro001.Designer.cs">
+      <DependentUpon>UCFiltro001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Cadastro\UCFiltro002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Cadastro\UCFiltro002.Designer.cs">
+      <DependentUpon>UCFiltro002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Entrada\UCFiltro003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Entrada\UCFiltro003.Designer.cs">
+      <DependentUpon>UCFiltro003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Saida\UCFiltro004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relatorio\Filtros\Saida\UCFiltro004.Designer.cs">
+      <DependentUpon>UCFiltro004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FrmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\FrmRelatorio.Designer.cs">
+      <DependentUpon>FrmRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\Impressao\CtrlImpressaoReport.cs" />
+    <Compile Include="Relatorio\Impressao\ImpressaoSaida.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorio\Impressao\ImpressaoSaida.Designer.cs">
+      <DependentUpon>ImpressaoSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\Impressao\ModeloImpressaoReport.cs" />
+    <Compile Include="Relatorio\Interfaces\IBotoesRelatorio.cs" />
+    <Compile Include="Relatorio\Interfaces\IFiltroRelatorio.cs" />
+    <Compile Include="Relatorio\Interfaces\IRelatorio.cs" />
+    <Compile Include="Relatorio\ModeloRelatorio\Relatorio02_ListaMercadorias.cs" />
+    <Compile Include="Relatorio\ModeloRelatorio\Relatorio01_ListaCliente.cs" />
+    <Compile Include="Relatorio\ModeloRelatorio\Relatorio04_VendaMercadoriaPeriodo.cs" />
+    <Compile Include="Relatorio\ModeloRelatorio\Relatorio03_NotaDeEntrada.cs" />
+    <Compile Include="Relatorio\Properties\Resources.Designer.cs" />
+    <Compile Include="Relatorio\Properties\Settings.Designer.cs" />
+    <Compile Include="Relatorio\Query\Cadastros\QueryRelatorio02ListaMercadoriasEstoque.cs" />
+    <Compile Include="Relatorio\Query\Cadastros\QueryRelatorio01ListaCliente.cs" />
+    <Compile Include="Relatorio\Query\Saida\QueryRelatorio04VendaMercadoriaPeriodo.cs" />
+    <Compile Include="Relatorio\Query\Entrada\QueryRelatorio03NotasEntrada.cs" />
+    <Compile Include="Relatorio\View\Base\RelatorioBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorio\View\Base\RelatorioBase.Designer.cs">
+      <DependentUpon>RelatorioBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\View\Cadastros\Relatorio01ListaClientes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorio\View\Cadastros\Relatorio01ListaClientes.Designer.cs">
+      <DependentUpon>Relatorio01ListaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\View\Cadastros\Relatorio02EstoqueMercadorias.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorio\View\Cadastros\Relatorio02EstoqueMercadorias.Designer.cs">
+      <DependentUpon>Relatorio02EstoqueMercadorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\View\Cadastros\RelatorioModelo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorio\View\Cadastros\RelatorioModelo.Designer.cs">
+      <DependentUpon>RelatorioModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\View\Saida\Relatorio04VendaDeMercadoriaPorPeriodo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorio\View\Saida\Relatorio04VendaDeMercadoriaPorPeriodo.Designer.cs">
+      <DependentUpon>Relatorio04VendaDeMercadoriaPorPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\View\Entrada\Relatorio03NotasDeEntrada.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorio\View\Entrada\Relatorio03NotasDeEntrada.Designer.cs">
+      <DependentUpon>Relatorio03NotasDeEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\View\Venda\Relatorio02VendaPorFinalizadoraSinteticoPorTurno.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorio\View\Venda\Relatorio02VendaPorFinalizadoraSinteticoPorTurno.Designer.cs">
+      <DependentUpon>Relatorio02VendaPorFinalizadoraSinteticoPorTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\View\Venda\Relatorio03VendaMercadoriaTurno.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorio\View\Venda\Relatorio03VendaMercadoriaTurno.Designer.cs">
+      <DependentUpon>Relatorio03VendaMercadoriaTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repositorios\Cadastros\RepositorioMercadoria.cs" />
+    <Compile Include="Repositorios\Cadastros\RepositorioCliente.cs" />
+    <Compile Include="Repositorios\IRepositoryBase.cs" />
+    <Compile Include="Repositorios\Movimentacao\RepositorioMovimentacao.cs" />
+    <Compile Include="Repositorios\RepositorioBase.cs" />
+    <Compile Include="Repositorios\Utilitarios\RepositorioConfiguracao.cs" />
+    <Compile Include="Utilitarios\EnumPelaDescricao.cs" />
+    <Compile Include="Utilitarios\Mascara.cs" />
+    <Compile Include="Utilitarios\Util.cs" />
+    <Compile Include="Utilitarios\Validadores.cs" />
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal2.resx">
+      <DependentUpon>FrmPrincipal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Cadastros\FrmCadastroCliente.resx">
+      <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Cadastros\FrmCadastroMercadorias.resx">
+      <DependentUpon>FrmCadastroMercadorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Movimentacao\FrmAddMercadoriaSaida.resx">
+      <DependentUpon>FrmAddMercadoriaSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Movimentacao\FrmAddMercadoria.resx">
+      <DependentUpon>FrmAddMercadoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Movimentacao\FrmCancelamentoSaida.resx">
+      <DependentUpon>FrmCancelamentoSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Movimentacao\FrmEntradas.resx">
+      <DependentUpon>FrmEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Movimentacao\FrmSaidas.resx">
+      <DependentUpon>FrmSaidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Utilitarios\FrmConfiguracoes.resx">
+      <DependentUpon>FrmConfiguracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Utilitarios\FrmImportador.resx">
+      <DependentUpon>FrmImportador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisar\FrmPesquisar.resx">
+      <DependentUpon>FrmPesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Relatorio\Filtros\Abstrato\FrmFiltro.resx">
+      <DependentUpon>FrmFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\Filtros\Abstrato\UCBotoesFiltro.resx">
+      <DependentUpon>UCBotoesFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\Filtros\Cadastro\UCFiltro001.resx">
+      <DependentUpon>UCFiltro001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\Filtros\Cadastro\UCFiltro002.resx">
+      <DependentUpon>UCFiltro002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\Filtros\Entrada\UCFiltro003.resx">
+      <DependentUpon>UCFiltro003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\Filtros\Saida\UCFiltro004.resx">
+      <DependentUpon>UCFiltro004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\FrmRelatorio.resx">
+      <DependentUpon>FrmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\Impressao\ImpressaoSaida.resx">
+      <DependentUpon>ImpressaoSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\Properties\Resources.resx" />
+    <EmbeddedResource Include="Relatorio\View\Base\RelatorioBase.resx">
+      <DependentUpon>RelatorioBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\View\Cadastros\Relatorio01ListaClientes.resx">
+      <DependentUpon>Relatorio01ListaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\View\Cadastros\Relatorio02EstoqueMercadorias.resx">
+      <DependentUpon>Relatorio02EstoqueMercadorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\View\Cadastros\RelatorioModelo.resx">
+      <DependentUpon>RelatorioModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\View\Saida\Relatorio04VendaDeMercadoriaPorPeriodo.resx">
+      <DependentUpon>Relatorio04VendaDeMercadoriaPorPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\View\Entrada\Relatorio03NotasDeEntrada.resx">
+      <DependentUpon>Relatorio03NotasDeEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\View\Venda\Relatorio02VendaPorFinalizadoraSinteticoPorTurno.resx">
+      <DependentUpon>Relatorio02VendaPorFinalizadoraSinteticoPorTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\View\Venda\Relatorio03VendaMercadoriaTurno.resx">
+      <DependentUpon>Relatorio03VendaMercadoriaTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Relatorio\Properties\Settings.settings" />
+    <None Include="Scripts\Configuracao.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao_menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao_mais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\procurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DllsDev\DevExpress.Charts.v13.2.Core.dll" />
+    <Content Include="DllsDev\DevExpress.Data.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.Data.v13.2.xml" />
+    <Content Include="DllsDev\DevExpress.Office.v13.2.Core.dll" />
+    <Content Include="DllsDev\DevExpress.Office.v13.2.Core.xml" />
+    <Content Include="DllsDev\DevExpress.PivotGrid.v13.2.Core.dll" />
+    <Content Include="DllsDev\DevExpress.PivotGrid.v13.2.Core.xml" />
+    <Content Include="DllsDev\DevExpress.Printing.v13.2.Core.dll" />
+    <Content Include="DllsDev\DevExpress.Printing.v13.2.Core.xml" />
+    <Content Include="DllsDev\DevExpress.RichEdit.v13.2.Core.dll" />
+    <Content Include="DllsDev\DevExpress.RichEdit.v13.2.Core.xml" />
+    <Content Include="DllsDev\DevExpress.Sparkline.v13.2.Core.dll" />
+    <Content Include="DllsDev\DevExpress.Sparkline.v13.2.Core.xml" />
+    <Content Include="DllsDev\DevExpress.Utils.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.Utils.v13.2.xml" />
+    <Content Include="DllsDev\DevExpress.XtraBars.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.XtraBars.v13.2.xml" />
+    <Content Include="DllsDev\DevExpress.XtraCharts.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.XtraCharts.v13.2.xml" />
+    <Content Include="DllsDev\DevExpress.XtraEditors.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.XtraEditors.v13.2.xml" />
+    <Content Include="DllsDev\DevExpress.XtraGrid.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.XtraGrid.v13.2.xml" />
+    <Content Include="DllsDev\DevExpress.XtraLayout.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.XtraLayout.v13.2.xml" />
+    <Content Include="DllsDev\DevExpress.XtraPrinting.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.XtraPrinting.v13.2.xml" />
+    <Content Include="DllsDev\DevExpress.XtraReports.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.XtraReports.v13.2.xml" />
+    <Content Include="DllsDev\DevExpress.XtraTreeList.v13.2.dll" />
+    <Content Include="DllsDev\DevExpress.XtraTreeList.v13.2.xml" />
+    <Content Include="Scripts\Script.sql" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
