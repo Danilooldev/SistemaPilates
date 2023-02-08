@@ -65,7 +65,12 @@ namespace FichasPilates.Janelas
         {
 
 
-            SetCheckedListBoxItems(Convert.ToInt32(textBox1.Text));
+            
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

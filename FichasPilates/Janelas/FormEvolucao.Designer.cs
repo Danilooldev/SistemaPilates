@@ -44,6 +44,15 @@
             this.label13 = new System.Windows.Forms.Label();
             this.chlEquilibrio = new System.Windows.Forms.CheckedListBox();
             this.chlSolo = new System.Windows.Forms.CheckedListBox();
+            this.chlFixball = new System.Windows.Forms.CheckedListBox();
+            this.chlLira = new System.Windows.Forms.CheckedListBox();
+            this.chlSkier = new System.Windows.Forms.CheckedListBox();
+            this.chlSlack = new System.Windows.Forms.CheckedListBox();
+            this.chlSkate = new System.Windows.Forms.CheckedListBox();
+            this.chlBarrel = new System.Windows.Forms.CheckedListBox();
+            this.chlChair = new System.Windows.Forms.CheckedListBox();
+            this.chlCadilac = new System.Windows.Forms.CheckedListBox();
+            this.chlReformer = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -101,17 +110,18 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(228, 169);
+            this.label5.Location = new System.Drawing.Point(208, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 16);
             this.label5.TabIndex = 5;
             this.label5.Text = "REFORMER";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(354, 169);
+            this.label6.Location = new System.Drawing.Point(324, 168);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 16);
             this.label6.TabIndex = 6;
@@ -131,7 +141,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(522, 169);
+            this.label8.Location = new System.Drawing.Point(502, 169);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(61, 16);
             this.label8.TabIndex = 8;
@@ -203,11 +213,92 @@
             this.chlSolo.Size = new System.Drawing.Size(78, 94);
             this.chlSolo.TabIndex = 14;
             // 
+            // chlFixball
+            // 
+            this.chlFixball.FormattingEnabled = true;
+            this.chlFixball.Location = new System.Drawing.Point(1001, 187);
+            this.chlFixball.Name = "chlFixball";
+            this.chlFixball.Size = new System.Drawing.Size(78, 94);
+            this.chlFixball.TabIndex = 17;
+            // 
+            // chlLira
+            // 
+            this.chlLira.FormattingEnabled = true;
+            this.chlLira.Location = new System.Drawing.Point(900, 187);
+            this.chlLira.Name = "chlLira";
+            this.chlLira.Size = new System.Drawing.Size(78, 94);
+            this.chlLira.TabIndex = 18;
+            // 
+            // chlSkier
+            // 
+            this.chlSkier.FormattingEnabled = true;
+            this.chlSkier.Location = new System.Drawing.Point(798, 187);
+            this.chlSkier.Name = "chlSkier";
+            this.chlSkier.Size = new System.Drawing.Size(78, 94);
+            this.chlSkier.TabIndex = 19;
+            // 
+            // chlSlack
+            // 
+            this.chlSlack.FormattingEnabled = true;
+            this.chlSlack.Location = new System.Drawing.Point(714, 187);
+            this.chlSlack.Name = "chlSlack";
+            this.chlSlack.Size = new System.Drawing.Size(78, 94);
+            this.chlSlack.TabIndex = 20;
+            // 
+            // chlSkate
+            // 
+            this.chlSkate.FormattingEnabled = true;
+            this.chlSkate.Location = new System.Drawing.Point(606, 188);
+            this.chlSkate.Name = "chlSkate";
+            this.chlSkate.Size = new System.Drawing.Size(78, 94);
+            this.chlSkate.TabIndex = 21;
+            // 
+            // chlBarrel
+            // 
+            this.chlBarrel.FormattingEnabled = true;
+            this.chlBarrel.Location = new System.Drawing.Point(499, 187);
+            this.chlBarrel.Name = "chlBarrel";
+            this.chlBarrel.Size = new System.Drawing.Size(78, 94);
+            this.chlBarrel.TabIndex = 22;
+            // 
+            // chlChair
+            // 
+            this.chlChair.FormattingEnabled = true;
+            this.chlChair.Location = new System.Drawing.Point(415, 187);
+            this.chlChair.Name = "chlChair";
+            this.chlChair.Size = new System.Drawing.Size(78, 94);
+            this.chlChair.TabIndex = 23;
+            // 
+            // chlCadilac
+            // 
+            this.chlCadilac.FormattingEnabled = true;
+            this.chlCadilac.Location = new System.Drawing.Point(309, 188);
+            this.chlCadilac.Name = "chlCadilac";
+            this.chlCadilac.Size = new System.Drawing.Size(78, 94);
+            this.chlCadilac.TabIndex = 24;
+            // 
+            // chlReformer
+            // 
+            this.chlReformer.FormattingEnabled = true;
+            this.chlReformer.Location = new System.Drawing.Point(211, 187);
+            this.chlReformer.Name = "chlReformer";
+            this.chlReformer.Size = new System.Drawing.Size(78, 94);
+            this.chlReformer.TabIndex = 25;
+            // 
             // FormEvolucao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1171, 690);
+            this.Controls.Add(this.chlReformer);
+            this.Controls.Add(this.chlCadilac);
+            this.Controls.Add(this.chlChair);
+            this.Controls.Add(this.chlBarrel);
+            this.Controls.Add(this.chlSkate);
+            this.Controls.Add(this.chlSlack);
+            this.Controls.Add(this.chlSkier);
+            this.Controls.Add(this.chlLira);
+            this.Controls.Add(this.chlFixball);
             this.Controls.Add(this.chlSolo);
             this.Controls.Add(this.chlEquilibrio);
             this.Controls.Add(this.label13);
@@ -248,7 +339,16 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.CheckedListBox chlEquilibrio;
         public System.Windows.Forms.CheckedListBox chlSolo;
+        public System.Windows.Forms.CheckedListBox chlFixball;
+        public System.Windows.Forms.CheckedListBox chlLira;
+        public System.Windows.Forms.CheckedListBox chlSkier;
+        public System.Windows.Forms.CheckedListBox chlSlack;
+        public System.Windows.Forms.CheckedListBox chlSkate;
+        public System.Windows.Forms.CheckedListBox chlBarrel;
+        public System.Windows.Forms.CheckedListBox chlChair;
+        public System.Windows.Forms.CheckedListBox chlCadilac;
+        public System.Windows.Forms.CheckedListBox chlReformer;
+        public System.Windows.Forms.CheckedListBox chlEquilibrio;
     }
 }

@@ -27,6 +27,8 @@ namespace FichasPilates.Controller
         {
             //chlEquilibrio.SetCheckedListBoxItemsGeneric<EEquilibrio>(0);
             //chlSolo.SetCheckedListBoxItemsGeneric<ESolo>(0);
+
+        
         }
 
         private void RecuperandoDados()

@@ -46,8 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\CtrlEvolucao.cs" />
     <Compile Include="Controller\CtrlNovaFicha.cs" />
     <Compile Include="Controller\CtrlPrincipal.cs" />
+    <Compile Include="Enumerador\EBarrel.cs" />
+    <Compile Include="Enumerador\ECadilac.cs" />
+    <Compile Include="Enumerador\EChair.cs" />
+    <Compile Include="Enumerador\EFixball.cs" />
+    <Compile Include="Enumerador\ELira.cs" />
+    <Compile Include="Enumerador\EReformer.cs" />
+    <Compile Include="Enumerador\ESkate.cs" />
+    <Compile Include="Enumerador\ESkier.cs" />
+    <Compile Include="Enumerador\ESlack.cs" />
     <Compile Include="Enumerador\ESolo.cs" />
     <Compile Include="Enumerador\EEquilibrio.cs" />
     <Compile Include="FormPrincipal.cs">

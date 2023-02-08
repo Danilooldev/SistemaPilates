@@ -11,14 +11,21 @@ namespace FichasPilates.Enumerador
     public enum ESolo
     {
 
-        Cachorro = 1,
+        Livre = 1,
 
+        Bolinha = 2,
 
-        Gato = 2,
+        Rolo = 4,
 
-        Jacare = 4,
+        Theraband = 8,
 
-        Opa = 8,
+        [Description("Magic Circule")]
+        MagicCircule = 16,
+
+        Halter= 32,
+        
+        MiniBand= 64,
+
 
 
 
