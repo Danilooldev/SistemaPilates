@@ -361,8 +361,6 @@
         private System.Windows.Forms.RadioButton rbtFeminino;
         private System.Windows.Forms.DateTimePicker dteNascimento;
         private System.Windows.Forms.RichTextBox rchObjetivo;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtEnd;
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.TextBox txtProfissao;
         private System.Windows.Forms.TextBox txtQueixaPrincipal;
@@ -372,5 +370,7 @@
         private System.Windows.Forms.TextBox txtCel;
         private System.Windows.Forms.TextBox txtAnamnese;
         public System.Windows.Forms.Button btnSalvar;
+        public System.Windows.Forms.TextBox txtNome;
+        public System.Windows.Forms.TextBox txtEnd;
     }
 }

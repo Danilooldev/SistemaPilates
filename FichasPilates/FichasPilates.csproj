@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controller\CtrlNovaFicha.cs" />
     <Compile Include="Controller\CtrlPrincipal.cs" />
+    <Compile Include="Enumerador\ESolo.cs" />
     <Compile Include="Enumerador\EEquilibrio.cs" />
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -75,6 +76,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilitarios\ExtensionCheckedListBox.cs" />
     <Compile Include="Utilitarios\EnumPelaDescricao.cs" />
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
