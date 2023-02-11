@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\CtrlEvolucao.cs" />
+    <Compile Include="Controller\CtrlFicha.cs" />
     <Compile Include="Controller\CtrlNovaFicha.cs" />
     <Compile Include="Controller\CtrlPrincipal.cs" />
     <Compile Include="Enumerador\EBarrel.cs" />
