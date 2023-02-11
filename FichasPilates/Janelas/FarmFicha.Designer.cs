@@ -103,10 +103,10 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tabEvolucao = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.tabFicha.SuspendLayout();
             this.tabInfoBasica.SuspendLayout();
             this.tabPostura.SuspendLayout();
@@ -369,7 +369,7 @@
             this.label1.Size = new System.Drawing.Size(111, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Paciente:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // tabPostura
             // 
@@ -737,7 +737,7 @@
             this.groupBox4.TabIndex = 40;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Pelve";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            
             // 
             // rbtAnteriorPelveSimetrica
             // 
@@ -750,7 +750,7 @@
             this.rbtAnteriorPelveSimetrica.TabStop = true;
             this.rbtAnteriorPelveSimetrica.Text = "Simétrica";
             this.rbtAnteriorPelveSimetrica.UseVisualStyleBackColor = true;
-            this.rbtAnteriorPelveSimetrica.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            
             // 
             // rbtAnteriorPelveDirAlta
             // 
@@ -788,7 +788,7 @@
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Mamilos";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            
             // 
             // rbtAnteriorMamilosSimetrica
             // 
@@ -838,7 +838,7 @@
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ombro";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            
             // 
             // rbtAnteriorOmbroSimetrica
             // 
@@ -960,8 +960,7 @@
             this.label21.Size = new System.Drawing.Size(163, 20);
             this.label21.TabIndex = 28;
             this.label21.Text = "VISTA LATERAL D";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
-            // 
+            
             // label15
             // 
             this.label15.AutoSize = true;
@@ -996,6 +995,18 @@
             this.tabEvolucao.Text = "Evolução";
             this.tabEvolucao.UseVisualStyleBackColor = true;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label14.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label14.Location = new System.Drawing.Point(293, 30);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(213, 24);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Histórico de evolução";
+            
+            // 
             // btnAdicionar
             // 
             this.btnAdicionar.Location = new System.Drawing.Point(61, 569);
@@ -1004,7 +1015,7 @@
             this.btnAdicionar.TabIndex = 1;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
-            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
+            
             // 
             // dataGridView1
             // 
@@ -1024,18 +1035,6 @@
             this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label14.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label14.Location = new System.Drawing.Point(293, 30);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(213, 24);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Histórico de evolução";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // FarmFicha
             // 
@@ -1147,7 +1146,6 @@
         private System.Windows.Forms.RadioButton rbtAnteriorJoelhosLateral;
         private System.Windows.Forms.RadioButton rbtAnteriorJoelhosMedial;
         private System.Windows.Forms.RadioButton rbtAnteriorJoelhosNormal;
-        private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.TextBox txtQueixaPrincipal;
@@ -1162,5 +1160,6 @@
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.DateTimePicker dteNasc;
         private System.Windows.Forms.Label label14;
+        public System.Windows.Forms.Button btnAdicionar;
     }
 }

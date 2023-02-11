@@ -21,6 +21,9 @@ namespace FichasPilates.Controller
 
             InicializarCampos();
 
+
+            frm.ShowDialog();
+
         }
 
         private void InicializarCampos()

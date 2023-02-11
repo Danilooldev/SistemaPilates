@@ -31,8 +31,7 @@ namespace FichasPilates.Controller
 
             CtrlNovaFicha ctrlNovaFicha = new CtrlNovaFicha();
 
-
-            ctrlNovaFicha.frm.ShowDialog();
+            
 
             //FormNovaFicha formNovaFicha = new FormNovaFicha();
             //formNovaFicha.ShowDialog();
@@ -40,8 +39,8 @@ namespace FichasPilates.Controller
 
         private void btnBuscarFicha_Click(object sender, EventArgs e)
         {
-            FarmFicha farmFicha = new FarmFicha();
-            farmFicha.ShowDialog();
+            CtrlFicha ctrlFicha = new CtrlFicha();
+            
         }
 
     }

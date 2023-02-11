@@ -53,6 +53,7 @@
             this.chlChair = new System.Windows.Forms.CheckedListBox();
             this.chlCadilac = new System.Windows.Forms.CheckedListBox();
             this.chlReformer = new System.Windows.Forms.CheckedListBox();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -285,11 +286,21 @@
             this.chlReformer.Size = new System.Drawing.Size(78, 94);
             this.chlReformer.TabIndex = 25;
             // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(78, 352);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 26;
+            this.btnSalvar.Text = "button1";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            // 
             // FormEvolucao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1171, 690);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.chlReformer);
             this.Controls.Add(this.chlCadilac);
             this.Controls.Add(this.chlChair);
@@ -350,5 +361,6 @@
         public System.Windows.Forms.CheckedListBox chlCadilac;
         public System.Windows.Forms.CheckedListBox chlReformer;
         public System.Windows.Forms.CheckedListBox chlEquilibrio;
+        public System.Windows.Forms.Button btnSalvar;
     }
 }
