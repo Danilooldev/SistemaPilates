@@ -292,7 +292,7 @@
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 26;
-            this.btnSalvar.Text = "button1";
+            this.btnSalvar.Text = "ADICIONAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // FormEvolucao

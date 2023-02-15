@@ -23,6 +23,8 @@ namespace FichasPilates.Controller
             DelegarEventos();
 
             frm.ShowDialog();
+            
+
         
         }
 
@@ -33,13 +35,19 @@ namespace FichasPilates.Controller
 
 
             frm.btnSalvar.Click += BtnSalvar_Click;
+            
+         
 
             
         }
+        
+
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
             PegarDadosTela();
+            MessageBox.Show("Adicionado Com Sucesso!");
+
         }
 
         private ModelEvolucao PegarDadosTela()
@@ -55,6 +63,7 @@ namespace FichasPilates.Controller
 
             return null;
         }
+        
 
 
         private void InicializarCamp()
@@ -73,6 +82,7 @@ namespace FichasPilates.Controller
 
             frm.chlFixball.SetCheckedListBoxItemsGeneric<EFixball>(0);
         }
+        
         
             
             
