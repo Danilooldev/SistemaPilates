@@ -71,7 +71,7 @@
             // lblSexo
             // 
             this.lblSexo.AutoSize = true;
-            this.lblSexo.Location = new System.Drawing.Point(88, 79);
+            this.lblSexo.Location = new System.Drawing.Point(88, 72);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(50, 16);
             this.lblSexo.TabIndex = 1;
@@ -181,7 +181,7 @@
             // rbtMasculino
             // 
             this.rbtMasculino.AutoSize = true;
-            this.rbtMasculino.Location = new System.Drawing.Point(151, 73);
+            this.rbtMasculino.Location = new System.Drawing.Point(145, 72);
             this.rbtMasculino.Name = "rbtMasculino";
             this.rbtMasculino.Size = new System.Drawing.Size(95, 20);
             this.rbtMasculino.TabIndex = 13;
@@ -192,7 +192,7 @@
             // rbtFeminino
             // 
             this.rbtFeminino.AutoSize = true;
-            this.rbtFeminino.Location = new System.Drawing.Point(270, 75);
+            this.rbtFeminino.Location = new System.Drawing.Point(257, 72);
             this.rbtFeminino.Name = "rbtFeminino";
             this.rbtFeminino.Size = new System.Drawing.Size(88, 20);
             this.rbtFeminino.TabIndex = 14;

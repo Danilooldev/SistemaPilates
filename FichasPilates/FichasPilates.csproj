@@ -101,6 +101,8 @@
       <DependentUpon>FormNovaFicha.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelos\ModelEvolucao.cs" />
+    <Compile Include="Modelos\ModelFicha.cs" />
+    <Compile Include="Modelos\ModelNovaFicha.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilitarios\ExtensionCheckedListBox.cs" />

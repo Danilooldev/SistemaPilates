@@ -218,35 +218,35 @@
             // 
             this.txtPatologia.Location = new System.Drawing.Point(119, 235);
             this.txtPatologia.Name = "txtPatologia";
-            this.txtPatologia.Size = new System.Drawing.Size(100, 20);
+            this.txtPatologia.Size = new System.Drawing.Size(371, 20);
             this.txtPatologia.TabIndex = 16;
             // 
             // txtProfissao
             // 
             this.txtProfissao.Location = new System.Drawing.Point(119, 202);
             this.txtProfissao.Name = "txtProfissao";
-            this.txtProfissao.Size = new System.Drawing.Size(100, 20);
+            this.txtProfissao.Size = new System.Drawing.Size(371, 20);
             this.txtProfissao.TabIndex = 15;
             // 
             // txtCel
             // 
             this.txtCel.Location = new System.Drawing.Point(368, 174);
             this.txtCel.Name = "txtCel";
-            this.txtCel.Size = new System.Drawing.Size(100, 20);
+            this.txtCel.Size = new System.Drawing.Size(122, 20);
             this.txtCel.TabIndex = 14;
             // 
             // txtSexo
             // 
             this.txtSexo.Location = new System.Drawing.Point(93, 108);
             this.txtSexo.Name = "txtSexo";
-            this.txtSexo.Size = new System.Drawing.Size(100, 20);
+            this.txtSexo.Size = new System.Drawing.Size(126, 20);
             this.txtSexo.TabIndex = 13;
             // 
             // txtPaciente
             // 
             this.txtPaciente.Location = new System.Drawing.Point(162, 76);
             this.txtPaciente.Name = "txtPaciente";
-            this.txtPaciente.Size = new System.Drawing.Size(100, 20);
+            this.txtPaciente.Size = new System.Drawing.Size(446, 20);
             this.txtPaciente.TabIndex = 12;
             // 
             // label12
@@ -369,7 +369,6 @@
             this.label1.Size = new System.Drawing.Size(111, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Paciente:";
-            
             // 
             // tabPostura
             // 
@@ -737,7 +736,6 @@
             this.groupBox4.TabIndex = 40;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Pelve";
-            
             // 
             // rbtAnteriorPelveSimetrica
             // 
@@ -750,7 +748,6 @@
             this.rbtAnteriorPelveSimetrica.TabStop = true;
             this.rbtAnteriorPelveSimetrica.Text = "Simétrica";
             this.rbtAnteriorPelveSimetrica.UseVisualStyleBackColor = true;
-            
             // 
             // rbtAnteriorPelveDirAlta
             // 
@@ -788,7 +785,6 @@
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Mamilos";
-            
             // 
             // rbtAnteriorMamilosSimetrica
             // 
@@ -838,7 +834,6 @@
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ombro";
-            
             // 
             // rbtAnteriorOmbroSimetrica
             // 
@@ -960,7 +955,7 @@
             this.label21.Size = new System.Drawing.Size(163, 20);
             this.label21.TabIndex = 28;
             this.label21.Text = "VISTA LATERAL D";
-            
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -1005,7 +1000,6 @@
             this.label14.Size = new System.Drawing.Size(213, 24);
             this.label14.TabIndex = 2;
             this.label14.Text = "Histórico de evolução";
-            
             // 
             // btnAdicionar
             // 
@@ -1015,7 +1009,6 @@
             this.btnAdicionar.TabIndex = 1;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
-            
             // 
             // dataGridView1
             // 
