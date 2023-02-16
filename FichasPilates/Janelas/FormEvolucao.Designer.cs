@@ -90,30 +90,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 168);
+            this.label3.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 164);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 16);
+            this.label3.Size = new System.Drawing.Size(99, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "EQUILÍBRIO";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(144, 169);
+            this.label4.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(158, 164);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 16);
+            this.label4.Size = new System.Drawing.Size(48, 16);
             this.label4.TabIndex = 4;
             this.label4.Text = "SOLO";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(208, 168);
+            this.label5.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(238, 165);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 16);
+            this.label5.Size = new System.Drawing.Size(91, 16);
             this.label5.TabIndex = 5;
             this.label5.Text = "REFORMER";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -121,185 +121,189 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(324, 168);
+            this.label6.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(369, 165);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 16);
+            this.label6.Size = new System.Drawing.Size(74, 16);
             this.label6.TabIndex = 6;
             this.label6.Text = "CADILAC";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(433, 169);
+            this.label7.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(488, 164);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 16);
+            this.label7.Size = new System.Drawing.Size(55, 16);
             this.label7.TabIndex = 7;
             this.label7.Text = "CHAIR";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(502, 169);
+            this.label8.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(591, 165);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 16);
+            this.label8.Size = new System.Drawing.Size(67, 16);
             this.label8.TabIndex = 8;
             this.label8.Text = "BARREL";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(633, 168);
+            this.label9.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(713, 165);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 16);
+            this.label9.Size = new System.Drawing.Size(57, 16);
             this.label9.TabIndex = 9;
             this.label9.Text = "SKATE";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(722, 168);
+            this.label10.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(820, 165);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 16);
+            this.label10.Size = new System.Drawing.Size(57, 16);
             this.label10.TabIndex = 10;
             this.label10.Text = "SLACK";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(816, 169);
+            this.label11.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(932, 165);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 16);
+            this.label11.Size = new System.Drawing.Size(53, 16);
             this.label11.TabIndex = 11;
             this.label11.Text = "SKIER";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(927, 168);
+            this.label12.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(1047, 164);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 16);
+            this.label12.Size = new System.Drawing.Size(43, 16);
             this.label12.TabIndex = 12;
             this.label12.Text = "LIRA";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1021, 169);
+            this.label13.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(1146, 165);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 16);
+            this.label13.Size = new System.Drawing.Size(73, 16);
             this.label13.TabIndex = 13;
             this.label13.Text = "FIXBALL";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // chlEquilibrio
             // 
             this.chlEquilibrio.FormattingEnabled = true;
-            this.chlEquilibrio.Location = new System.Drawing.Point(28, 187);
+            this.chlEquilibrio.Location = new System.Drawing.Point(19, 183);
             this.chlEquilibrio.Name = "chlEquilibrio";
-            this.chlEquilibrio.Size = new System.Drawing.Size(78, 94);
+            this.chlEquilibrio.Size = new System.Drawing.Size(105, 124);
             this.chlEquilibrio.TabIndex = 14;
             // 
             // chlSolo
             // 
             this.chlSolo.FormattingEnabled = true;
-            this.chlSolo.Location = new System.Drawing.Point(112, 188);
+            this.chlSolo.Location = new System.Drawing.Point(130, 183);
             this.chlSolo.Name = "chlSolo";
-            this.chlSolo.Size = new System.Drawing.Size(78, 94);
+            this.chlSolo.Size = new System.Drawing.Size(105, 124);
             this.chlSolo.TabIndex = 14;
             // 
             // chlFixball
             // 
             this.chlFixball.FormattingEnabled = true;
-            this.chlFixball.Location = new System.Drawing.Point(1001, 187);
+            this.chlFixball.Location = new System.Drawing.Point(1129, 184);
             this.chlFixball.Name = "chlFixball";
-            this.chlFixball.Size = new System.Drawing.Size(78, 94);
+            this.chlFixball.Size = new System.Drawing.Size(105, 124);
             this.chlFixball.TabIndex = 17;
             // 
             // chlLira
             // 
             this.chlLira.FormattingEnabled = true;
-            this.chlLira.Location = new System.Drawing.Point(900, 187);
+            this.chlLira.Location = new System.Drawing.Point(1018, 184);
             this.chlLira.Name = "chlLira";
-            this.chlLira.Size = new System.Drawing.Size(78, 94);
+            this.chlLira.Size = new System.Drawing.Size(105, 124);
             this.chlLira.TabIndex = 18;
             // 
             // chlSkier
             // 
             this.chlSkier.FormattingEnabled = true;
-            this.chlSkier.Location = new System.Drawing.Point(798, 187);
+            this.chlSkier.Location = new System.Drawing.Point(907, 183);
             this.chlSkier.Name = "chlSkier";
-            this.chlSkier.Size = new System.Drawing.Size(78, 94);
+            this.chlSkier.Size = new System.Drawing.Size(105, 124);
             this.chlSkier.TabIndex = 19;
             // 
             // chlSlack
             // 
             this.chlSlack.FormattingEnabled = true;
-            this.chlSlack.Location = new System.Drawing.Point(714, 187);
+            this.chlSlack.Location = new System.Drawing.Point(796, 183);
             this.chlSlack.Name = "chlSlack";
-            this.chlSlack.Size = new System.Drawing.Size(78, 94);
+            this.chlSlack.Size = new System.Drawing.Size(105, 124);
             this.chlSlack.TabIndex = 20;
             // 
             // chlSkate
             // 
             this.chlSkate.FormattingEnabled = true;
-            this.chlSkate.Location = new System.Drawing.Point(606, 188);
+            this.chlSkate.Location = new System.Drawing.Point(685, 183);
             this.chlSkate.Name = "chlSkate";
-            this.chlSkate.Size = new System.Drawing.Size(78, 94);
+            this.chlSkate.Size = new System.Drawing.Size(105, 124);
             this.chlSkate.TabIndex = 21;
             // 
             // chlBarrel
             // 
             this.chlBarrel.FormattingEnabled = true;
-            this.chlBarrel.Location = new System.Drawing.Point(499, 187);
+            this.chlBarrel.Location = new System.Drawing.Point(574, 184);
             this.chlBarrel.Name = "chlBarrel";
-            this.chlBarrel.Size = new System.Drawing.Size(78, 94);
+            this.chlBarrel.Size = new System.Drawing.Size(105, 124);
             this.chlBarrel.TabIndex = 22;
             // 
             // chlChair
             // 
             this.chlChair.FormattingEnabled = true;
-            this.chlChair.Location = new System.Drawing.Point(415, 187);
+            this.chlChair.Location = new System.Drawing.Point(463, 184);
             this.chlChair.Name = "chlChair";
-            this.chlChair.Size = new System.Drawing.Size(78, 94);
+            this.chlChair.Size = new System.Drawing.Size(105, 124);
             this.chlChair.TabIndex = 23;
             // 
             // chlCadilac
             // 
             this.chlCadilac.FormattingEnabled = true;
-            this.chlCadilac.Location = new System.Drawing.Point(309, 188);
+            this.chlCadilac.Location = new System.Drawing.Point(352, 184);
             this.chlCadilac.Name = "chlCadilac";
-            this.chlCadilac.Size = new System.Drawing.Size(78, 94);
+            this.chlCadilac.Size = new System.Drawing.Size(105, 124);
             this.chlCadilac.TabIndex = 24;
             // 
             // chlReformer
             // 
             this.chlReformer.FormattingEnabled = true;
-            this.chlReformer.Location = new System.Drawing.Point(211, 187);
+            this.chlReformer.Location = new System.Drawing.Point(241, 183);
             this.chlReformer.Name = "chlReformer";
-            this.chlReformer.Size = new System.Drawing.Size(78, 94);
+            this.chlReformer.Size = new System.Drawing.Size(105, 124);
             this.chlReformer.TabIndex = 25;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(78, 352);
+            this.btnSalvar.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.Black;
+            this.btnSalvar.Location = new System.Drawing.Point(19, 334);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.Size = new System.Drawing.Size(129, 50);
             this.btnSalvar.TabIndex = 26;
             this.btnSalvar.Text = "ADICIONAR";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             // 
             // FormEvolucao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1171, 690);
+            this.ClientSize = new System.Drawing.Size(1255, 500);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.chlReformer);
             this.Controls.Add(this.chlCadilac);
