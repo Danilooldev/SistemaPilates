@@ -107,6 +107,7 @@
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabFicha.SuspendLayout();
             this.tabInfoBasica.SuspendLayout();
             this.tabPostura.SuspendLayout();
@@ -138,6 +139,7 @@
             // 
             // tabInfoBasica
             // 
+            this.tabInfoBasica.Controls.Add(this.button1);
             this.tabInfoBasica.Controls.Add(this.rchObjetivo);
             this.tabInfoBasica.Controls.Add(this.txtTel);
             this.tabInfoBasica.Controls.Add(this.dteNasc);
@@ -1029,6 +1031,15 @@
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(614, 72);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Pesquisar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FarmFicha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1154,5 +1165,6 @@
         private System.Windows.Forms.DateTimePicker dteNasc;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Button btnAdicionar;
+        private System.Windows.Forms.Button button1;
     }
 }

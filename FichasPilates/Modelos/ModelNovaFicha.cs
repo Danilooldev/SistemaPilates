@@ -9,12 +9,13 @@ namespace FichasPilates.Modelos
 {
     public class ModelNovaFicha
     {
+        public Int64 Id { get; set; }
         public string Nome { get; set; }
-        public bool Sexo { get; set; }
+        public int Sexo { get; set; }
         public DateTime DataNasc { get; set; }
         public string Endereco  { get; set; }
-        public int  Telefone { get; set; }
-        public int Celular { get; set; }
+        public string  Telefone { get; set; }
+        public string Celular { get; set; }
         public string Profissao { get; set; }   
         public string Patologia { get; set; }   
         public string Cirurgias { get; set; }    
@@ -22,7 +23,5 @@ namespace FichasPilates.Modelos
         public string QueixaPrincipal { get; set; } 
         public string Anamnese { get; set; }    
         public string Objetivo { get; set; }  
-
-
     }
 }

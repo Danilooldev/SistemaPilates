@@ -1,5 +1,7 @@
 ﻿using FichasPilates.Enumerador;
 using FichasPilates.Janelas;
+using FichasPilates.Modelos;
+using FichasPilates.Repositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +15,7 @@ namespace FichasPilates.Controller
     {
         public FormNovaFicha frm = new FormNovaFicha();
 
-        private RepositorioNovaFicha repositorio = new RepositorioNovaFicha();
+        private FichaRepository repositorio = new FichaRepository();
 
         public CtrlNovaFicha()
         {
@@ -31,7 +33,7 @@ namespace FichasPilates.Controller
             //chlEquilibrio.SetCheckedListBoxItemsGeneric<EEquilibrio>(0);
             //chlSolo.SetCheckedListBoxItemsGeneric<ESolo>(0);
 
-        
+
         }
 
         private void RecuperandoDados()
@@ -48,12 +50,26 @@ namespace FichasPilates.Controller
         }
 
 
-        private ModeloFicha TelaParaObjeto()
+        private ModelNovaFicha TelaParaObjeto()
         {
-            ModeloFicha modelo = new ModeloFicha
+            int sex = frm.rbtFeminino.Checked ? 0 : 1;
+
+            ModelNovaFicha modelo = new ModelNovaFicha
             {
                 Nome = frm.txtNome.Text,
-                End = frm.txtEnd.Text
+                Endereco = frm.txtEnd.Text,
+                Anamnese = frm.txtAnamnese.Text,
+                Celular = frm.txtCel.Text,
+                Cirurgias = frm.txtCirurgias.Text,
+                DataNasc = frm.dteNascimento.Value,
+                Exames = frm.txtExames.Text,
+                Objetivo = frm.rchObjetivo.Text,
+                Patologia = frm.txtPatologia.Text,
+                Profissao = frm.txtProfissao.Text,
+                QueixaPrincipal = frm.txtQueixaPrincipal.Text,
+                Sexo = sex,
+                Telefone = frm.txtTel.Text
+
             };
 
             return modelo;
@@ -64,12 +80,24 @@ namespace FichasPilates.Controller
         {
             frm.txtNome.Text = null;
             frm.txtEnd.Text = null;
+            frm.txtAnamnese.Text = null;
+            frm.txtCel.Text = null;
+            frm.txtCirurgias.Text = null;
+            frm.dteNascimento.Value = DateTime.Now;
+            frm.txtExames.Text = null;
+            frm.rchObjetivo.Text = null;
+            frm.txtPatologia.Text = null;
+            frm.txtProfissao.Text = null;
+            frm.txtQueixaPrincipal.Text = null;
+            frm.txtTel.Text = null;
+            frm.rbtFeminino.Checked = true;
+
         }
 
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            ModeloFicha modelo = TelaParaObjeto();
+            ModelNovaFicha modelo = TelaParaObjeto();
 
             repositorio.Salvar(modelo);
 
@@ -87,14 +115,5 @@ namespace FichasPilates.Controller
         public string End { get; set; }
     }
 
-    public class RepositorioNovaFicha
-    {
-        public void Salvar(ModeloFicha modelo)
-        {
-            MessageBox.Show("SALVE NO BANCO\n\n\n" + modelo.Nome + "\n" + modelo.End);
-
-            // conectar com o banco e mandar salvar....
-        }
-    }
 
 }
