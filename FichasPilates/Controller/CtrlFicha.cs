@@ -10,18 +10,29 @@ namespace FichasPilates.Controller
     public class CtrlFicha
     {
         public FarmFicha frm = new FarmFicha();
+        public FormPesquisaPaciente frmPesquisar = new FormPesquisaPaciente();
 
         public CtrlFicha()
         {
             DelegarEvento();
 
-            frm.ShowDialog();
+            frm.Show();
+            frmPesquisar.ShowDialog();
 
         }
+        private void BtnPesquiar(object sender, EventArgs e)
+        {
+            frmPesquisar.ShowDialog();
+        }
+
         private void DelegarEvento()
         {
+            frmPesquisar.Click += BtnPesquiar;
             frm.btnAdicionar.Click += BtnAdicionar_Click;
+            
+            
         }
+        
 
         private void BtnAdicionar_Click(object sender, EventArgs e)
         {

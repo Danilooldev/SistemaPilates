@@ -30,6 +30,7 @@
         {
             this.tabFicha = new System.Windows.Forms.TabControl();
             this.tabInfoBasica = new System.Windows.Forms.TabPage();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.rchObjetivo = new System.Windows.Forms.RichTextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.dteNasc = new System.Windows.Forms.DateTimePicker();
@@ -107,7 +108,6 @@
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabFicha.SuspendLayout();
             this.tabInfoBasica.SuspendLayout();
             this.tabPostura.SuspendLayout();
@@ -139,7 +139,7 @@
             // 
             // tabInfoBasica
             // 
-            this.tabInfoBasica.Controls.Add(this.button1);
+            this.tabInfoBasica.Controls.Add(this.btnPesquisar);
             this.tabInfoBasica.Controls.Add(this.rchObjetivo);
             this.tabInfoBasica.Controls.Add(this.txtTel);
             this.tabInfoBasica.Controls.Add(this.dteNasc);
@@ -171,9 +171,19 @@
             this.tabInfoBasica.Text = "Ficha";
             this.tabInfoBasica.UseVisualStyleBackColor = true;
             // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(628, 70);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(74, 30);
+            this.btnPesquisar.TabIndex = 23;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            // 
             // rchObjetivo
             // 
-            this.rchObjetivo.Location = new System.Drawing.Point(138, 424);
+            this.rchObjetivo.Enabled = false;
+            this.rchObjetivo.Location = new System.Drawing.Point(135, 424);
             this.rchObjetivo.Name = "rchObjetivo";
             this.rchObjetivo.Size = new System.Drawing.Size(885, 234);
             this.rchObjetivo.TabIndex = 22;
@@ -181,7 +191,8 @@
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(119, 170);
+            this.txtTel.Enabled = false;
+            this.txtTel.Location = new System.Drawing.Point(116, 170);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(100, 20);
             this.txtTel.TabIndex = 21;
@@ -197,56 +208,64 @@
             // 
             // txtQueixaPrincipal
             // 
-            this.txtQueixaPrincipal.Location = new System.Drawing.Point(173, 378);
+            this.txtQueixaPrincipal.Enabled = false;
+            this.txtQueixaPrincipal.Location = new System.Drawing.Point(170, 378);
             this.txtQueixaPrincipal.Name = "txtQueixaPrincipal";
             this.txtQueixaPrincipal.Size = new System.Drawing.Size(100, 20);
             this.txtQueixaPrincipal.TabIndex = 19;
             // 
             // txtCirurgias
             // 
-            this.txtCirurgias.Location = new System.Drawing.Point(173, 323);
+            this.txtCirurgias.Enabled = false;
+            this.txtCirurgias.Location = new System.Drawing.Point(170, 323);
             this.txtCirurgias.Name = "txtCirurgias";
             this.txtCirurgias.Size = new System.Drawing.Size(100, 20);
             this.txtCirurgias.TabIndex = 18;
             // 
             // txtExames
             // 
-            this.txtExames.Location = new System.Drawing.Point(173, 349);
+            this.txtExames.Enabled = false;
+            this.txtExames.Location = new System.Drawing.Point(170, 349);
             this.txtExames.Name = "txtExames";
             this.txtExames.Size = new System.Drawing.Size(100, 20);
             this.txtExames.TabIndex = 17;
             // 
             // txtPatologia
             // 
-            this.txtPatologia.Location = new System.Drawing.Point(119, 235);
+            this.txtPatologia.Enabled = false;
+            this.txtPatologia.Location = new System.Drawing.Point(116, 235);
             this.txtPatologia.Name = "txtPatologia";
             this.txtPatologia.Size = new System.Drawing.Size(371, 20);
             this.txtPatologia.TabIndex = 16;
             // 
             // txtProfissao
             // 
-            this.txtProfissao.Location = new System.Drawing.Point(119, 202);
+            this.txtProfissao.Enabled = false;
+            this.txtProfissao.Location = new System.Drawing.Point(116, 202);
             this.txtProfissao.Name = "txtProfissao";
             this.txtProfissao.Size = new System.Drawing.Size(371, 20);
             this.txtProfissao.TabIndex = 15;
             // 
             // txtCel
             // 
-            this.txtCel.Location = new System.Drawing.Point(368, 174);
+            this.txtCel.Enabled = false;
+            this.txtCel.Location = new System.Drawing.Point(365, 174);
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(122, 20);
             this.txtCel.TabIndex = 14;
             // 
             // txtSexo
             // 
-            this.txtSexo.Location = new System.Drawing.Point(93, 108);
+            this.txtSexo.Enabled = false;
+            this.txtSexo.Location = new System.Drawing.Point(90, 108);
             this.txtSexo.Name = "txtSexo";
             this.txtSexo.Size = new System.Drawing.Size(126, 20);
             this.txtSexo.TabIndex = 13;
             // 
             // txtPaciente
             // 
-            this.txtPaciente.Location = new System.Drawing.Point(162, 76);
+            this.txtPaciente.Enabled = false;
+            this.txtPaciente.Location = new System.Drawing.Point(159, 76);
             this.txtPaciente.Name = "txtPaciente";
             this.txtPaciente.Size = new System.Drawing.Size(446, 20);
             this.txtPaciente.TabIndex = 12;
@@ -1031,15 +1050,6 @@
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(614, 72);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Pesquisar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // FarmFicha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1152,19 +1162,19 @@
         private System.Windows.Forms.RadioButton rbtAnteriorJoelhosNormal;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox txtQueixaPrincipal;
-        private System.Windows.Forms.TextBox txtCirurgias;
-        private System.Windows.Forms.TextBox txtExames;
-        private System.Windows.Forms.TextBox txtPatologia;
-        private System.Windows.Forms.TextBox txtProfissao;
-        private System.Windows.Forms.TextBox txtCel;
-        private System.Windows.Forms.TextBox txtSexo;
-        private System.Windows.Forms.TextBox txtPaciente;
-        private System.Windows.Forms.RichTextBox rchObjetivo;
-        private System.Windows.Forms.TextBox txtTel;
-        private System.Windows.Forms.DateTimePicker dteNasc;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Button btnAdicionar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPesquisar;
+        public System.Windows.Forms.TextBox txtQueixaPrincipal;
+        public System.Windows.Forms.TextBox txtCirurgias;
+        public System.Windows.Forms.TextBox txtExames;
+        public System.Windows.Forms.TextBox txtPatologia;
+        public System.Windows.Forms.TextBox txtProfissao;
+        public System.Windows.Forms.TextBox txtCel;
+        public System.Windows.Forms.TextBox txtSexo;
+        public System.Windows.Forms.TextBox txtPaciente;
+        public System.Windows.Forms.RichTextBox rchObjetivo;
+        public System.Windows.Forms.TextBox txtTel;
+        public System.Windows.Forms.DateTimePicker dteNasc;
     }
 }
