@@ -28,57 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listPesquisa = new System.Windows.Forms.ListView();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.dgvListaPesquisa = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaPesquisa)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listPesquisa
-            // 
-            this.listPesquisa.HideSelection = false;
-            this.listPesquisa.Location = new System.Drawing.Point(12, 68);
-            this.listPesquisa.Name = "listPesquisa";
-            this.listPesquisa.Size = new System.Drawing.Size(660, 402);
-            this.listPesquisa.TabIndex = 0;
-            this.listPesquisa.UseCompatibleStateImageBehavior = false;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(22, 32);
+            this.txtNome.Location = new System.Drawing.Point(12, 24);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(495, 20);
+            this.txtNome.Size = new System.Drawing.Size(660, 20);
             this.txtNome.TabIndex = 1;
             this.txtNome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // btnPesquisar
+            // dgvListaPesquisa
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(543, 29);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(114, 23);
-            this.btnPesquisar.TabIndex = 2;
-            this.btnPesquisar.Text = "PESQUISAR\r\n";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.dgvListaPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaPesquisa.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvListaPesquisa.Location = new System.Drawing.Point(12, 58);
+            this.dgvListaPesquisa.Name = "dgvListaPesquisa";
+            this.dgvListaPesquisa.RowHeadersVisible = false;
+            this.dgvListaPesquisa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListaPesquisa.Size = new System.Drawing.Size(660, 439);
+            this.dgvListaPesquisa.TabIndex = 2;
             // 
-            // PesquisaPaciente
+            // FormPesquisaPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 500);
-            this.Controls.Add(this.btnPesquisar);
+            this.ClientSize = new System.Drawing.Size(684, 509);
+            this.Controls.Add(this.dgvListaPesquisa);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.listPesquisa);
-            this.Name = "PesquisaPaciente";
+            this.Name = "FormPesquisaPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PesquisaPaciente";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaPesquisa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listPesquisa;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Button btnPesquisar;
+        public System.Windows.Forms.TextBox txtNome;
+        public System.Windows.Forms.DataGridView dgvListaPesquisa;
     }
 }

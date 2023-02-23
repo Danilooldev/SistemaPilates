@@ -11,7 +11,7 @@ namespace FichasPilates.Modelos
     {
         public Int64 Id { get; set; }
         public string Nome { get; set; }
-        public int Sexo { get; set; }
+        public bool Sexo { get; set; }
         public DateTime DataNasc { get; set; }
         public string Endereco  { get; set; }
         public string  Telefone { get; set; }

@@ -1164,7 +1164,6 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Button btnAdicionar;
-        private System.Windows.Forms.Button btnPesquisar;
         public System.Windows.Forms.TextBox txtQueixaPrincipal;
         public System.Windows.Forms.TextBox txtCirurgias;
         public System.Windows.Forms.TextBox txtExames;
@@ -1176,5 +1175,6 @@
         public System.Windows.Forms.RichTextBox rchObjetivo;
         public System.Windows.Forms.TextBox txtTel;
         public System.Windows.Forms.DateTimePicker dteNasc;
+        public System.Windows.Forms.Button btnPesquisar;
     }
 }

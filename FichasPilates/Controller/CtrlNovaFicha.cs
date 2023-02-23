@@ -52,8 +52,6 @@ namespace FichasPilates.Controller
 
         private ModelNovaFicha TelaParaObjeto()
         {
-            int sex = frm.rbtFeminino.Checked ? 0 : 1;
-
             ModelNovaFicha modelo = new ModelNovaFicha
             {
                 Nome = frm.txtNome.Text,
@@ -67,7 +65,7 @@ namespace FichasPilates.Controller
                 Patologia = frm.txtPatologia.Text,
                 Profissao = frm.txtProfissao.Text,
                 QueixaPrincipal = frm.txtQueixaPrincipal.Text,
-                Sexo = sex,
+                Sexo = frm.rbtFeminino.Checked,
                 Telefone = frm.txtTel.Text
 
             };
@@ -108,12 +106,12 @@ namespace FichasPilates.Controller
     }
 
 
-    public class ModeloFicha
-    {
-        public string Nome { get; set; }
+    //public class ModeloFicha
+    //{
+    //    public string Nome { get; set; }
 
-        public string End { get; set; }
-    }
+    //    public string End { get; set; }
+    //}
 
 
 }
