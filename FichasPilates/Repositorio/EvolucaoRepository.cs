@@ -10,7 +10,7 @@ namespace FichasPilates.Repositorio
 {
     public class EvolucaoRepository : BaseRepository
     {
-        public IList<ModelEvolucao> Listar()
+        public IList<ModelEvolucao> Listar(ModelEvolucao modelo)
         {
             return base.Connection.Query<ModelEvolucao>("SELECT * FROM Evolucao").ToList();
         }

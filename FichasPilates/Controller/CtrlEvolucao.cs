@@ -1,10 +1,12 @@
 ﻿using FichasPilates.Enumerador;
 using FichasPilates.Janelas;
 using FichasPilates.Modelos;
+using FichasPilates.Repositorio;
 using FichasPilates.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +17,7 @@ namespace FichasPilates.Controller
       
     {
         public FormEvolucao frm = new FormEvolucao();
+        private EvolucaoRepository repositorio = new EvolucaoRepository();
         
         public CtrlEvolucao() 
         {
@@ -47,17 +50,31 @@ namespace FichasPilates.Controller
         {
             PegarDadosTela();
             MessageBox.Show("Adicionado Com Sucesso!");
+            
+
 
         }
+        
 
         private ModelEvolucao PegarDadosTela()
         {
             var slacks = frm.chlSlack.CheckedItems;
+            var equilibrio = frm.chlEquilibrio.CheckedItems;
+            var solo = frm.chlSolo.CheckedItems;
+            var reformer = frm.chlReformer.CheckedItems;
+            var cadilac =frm.chlCadilac.CheckedItems;
+            var chair = frm.chlChair.CheckedItems;
+            var barrel = frm.chlBarrel.CheckedItems;
+            var skate = frm.chlSkate.CheckedItems;
+            var skier = frm.chlSkier.CheckedItems;
+            var lira = frm.chlLira.CheckedItems;
+            var fixball = frm.chlFixball.CheckedItems;
 
 
             ModelEvolucao modelo = new ModelEvolucao();
 
-            //modelo.Slack = ;
+
+            //modelo.Reformer = reformer;//
 
 
 

@@ -134,7 +134,7 @@
             this.tabFicha.Location = new System.Drawing.Point(12, 3);
             this.tabFicha.Name = "tabFicha";
             this.tabFicha.SelectedIndex = 0;
-            this.tabFicha.Size = new System.Drawing.Size(1109, 726);
+            this.tabFicha.Size = new System.Drawing.Size(1013, 617);
             this.tabFicha.TabIndex = 0;
             // 
             // tabInfoBasica
@@ -166,14 +166,14 @@
             this.tabInfoBasica.Location = new System.Drawing.Point(4, 22);
             this.tabInfoBasica.Name = "tabInfoBasica";
             this.tabInfoBasica.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInfoBasica.Size = new System.Drawing.Size(1101, 700);
+            this.tabInfoBasica.Size = new System.Drawing.Size(1005, 591);
             this.tabInfoBasica.TabIndex = 0;
             this.tabInfoBasica.Text = "Ficha";
             this.tabInfoBasica.UseVisualStyleBackColor = true;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(628, 70);
+            this.btnPesquisar.Location = new System.Drawing.Point(727, 72);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(74, 30);
             this.btnPesquisar.TabIndex = 23;
@@ -185,7 +185,7 @@
             this.rchObjetivo.Enabled = false;
             this.rchObjetivo.Location = new System.Drawing.Point(135, 424);
             this.rchObjetivo.Name = "rchObjetivo";
-            this.rchObjetivo.Size = new System.Drawing.Size(885, 234);
+            this.rchObjetivo.Size = new System.Drawing.Size(586, 161);
             this.rchObjetivo.TabIndex = 22;
             this.rchObjetivo.Text = "";
             // 
@@ -211,7 +211,7 @@
             this.txtQueixaPrincipal.Enabled = false;
             this.txtQueixaPrincipal.Location = new System.Drawing.Point(170, 378);
             this.txtQueixaPrincipal.Name = "txtQueixaPrincipal";
-            this.txtQueixaPrincipal.Size = new System.Drawing.Size(100, 20);
+            this.txtQueixaPrincipal.Size = new System.Drawing.Size(551, 20);
             this.txtQueixaPrincipal.TabIndex = 19;
             // 
             // txtCirurgias
@@ -219,7 +219,7 @@
             this.txtCirurgias.Enabled = false;
             this.txtCirurgias.Location = new System.Drawing.Point(170, 323);
             this.txtCirurgias.Name = "txtCirurgias";
-            this.txtCirurgias.Size = new System.Drawing.Size(100, 20);
+            this.txtCirurgias.Size = new System.Drawing.Size(551, 20);
             this.txtCirurgias.TabIndex = 18;
             // 
             // txtExames
@@ -227,7 +227,7 @@
             this.txtExames.Enabled = false;
             this.txtExames.Location = new System.Drawing.Point(170, 349);
             this.txtExames.Name = "txtExames";
-            this.txtExames.Size = new System.Drawing.Size(100, 20);
+            this.txtExames.Size = new System.Drawing.Size(551, 20);
             this.txtExames.TabIndex = 17;
             // 
             // txtPatologia
@@ -267,7 +267,7 @@
             this.txtPaciente.Enabled = false;
             this.txtPaciente.Location = new System.Drawing.Point(159, 76);
             this.txtPaciente.Name = "txtPaciente";
-            this.txtPaciente.Size = new System.Drawing.Size(446, 20);
+            this.txtPaciente.Size = new System.Drawing.Size(562, 20);
             this.txtPaciente.TabIndex = 12;
             // 
             // label12
@@ -410,7 +410,7 @@
             this.tabPostura.Location = new System.Drawing.Point(4, 22);
             this.tabPostura.Name = "tabPostura";
             this.tabPostura.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPostura.Size = new System.Drawing.Size(1101, 700);
+            this.tabPostura.Size = new System.Drawing.Size(1005, 591);
             this.tabPostura.TabIndex = 1;
             this.tabPostura.Text = "Postura";
             this.tabPostura.UseVisualStyleBackColor = true;
@@ -1006,7 +1006,7 @@
             this.tabEvolucao.Location = new System.Drawing.Point(4, 22);
             this.tabEvolucao.Name = "tabEvolucao";
             this.tabEvolucao.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEvolucao.Size = new System.Drawing.Size(1101, 700);
+            this.tabEvolucao.Size = new System.Drawing.Size(1005, 591);
             this.tabEvolucao.TabIndex = 2;
             this.tabEvolucao.Text = "Evolução";
             this.tabEvolucao.UseVisualStyleBackColor = true;
@@ -1016,7 +1016,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label14.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label14.Location = new System.Drawing.Point(293, 30);
+            this.label14.Location = new System.Drawing.Point(252, 28);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(213, 24);
             this.label14.TabIndex = 2;
@@ -1024,7 +1024,7 @@
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Location = new System.Drawing.Point(61, 569);
+            this.btnAdicionar.Location = new System.Drawing.Point(856, 79);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(140, 54);
             this.btnAdicionar.TabIndex = 1;
@@ -1034,27 +1034,28 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(61, 79);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 79);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(704, 484);
+            this.dataGridView1.Size = new System.Drawing.Size(794, 484);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(926, 736);
+            this.btnSalvar.Location = new System.Drawing.Point(872, 626);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(153, 57);
             this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // FarmFicha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1131, 805);
+            this.ClientSize = new System.Drawing.Size(1039, 708);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.tabFicha);
             this.Name = "FarmFicha";
