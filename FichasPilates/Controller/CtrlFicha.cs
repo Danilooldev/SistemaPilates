@@ -1,24 +1,32 @@
 ﻿using FichasPilates.Janelas;
 using FichasPilates.Modelos;
+using FichasPilates.Repositorio;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FichasPilates.Controller
 {
     public class CtrlFicha
     {
         public FarmFicha frm = new FarmFicha();
-         
+        public EvolucaoRepository repositorievolucao = new EvolucaoRepository();
+        
 
         public CtrlFicha()
         {
             DelegarEvento();
 
             frm.Show();
-          
+            RetornaParaTelaEvolucao();
+
+
+
+
 
 
         }
@@ -33,15 +41,22 @@ namespace FichasPilates.Controller
             ObjetoParaTela(retorno);
 
             "".ToString();
+            
+            
         }
-
+        
         private void DelegarEvento()
         {
+         
             
             frm.btnAdicionar.Click += BtnAdicionar_Click;
             frm.btnPesquisar.Click += BtnPesquiar;
             
-        }
+          
+            
+
+
+    }
         
 
         private void BtnAdicionar_Click(object sender, EventArgs e)
@@ -74,6 +89,17 @@ namespace FichasPilates.Controller
 
 
         }
+        public ModelEvolucao RetornaParaTelaEvolucao()
+        {
+            if (frm.DialogResult == DialogResult.OK &&
+                frm.dataGridView1.Rows.Count > 0)
+                return frm.dataGridView1.Rows[frm.dataGridView1.CurrentRow.Index].DataBoundItem as ModelEvolucao;
+
+            return null;
+
+            frm.dataGridView1 = repositorievolucao.Listar();
+        }
+
 
 
     }

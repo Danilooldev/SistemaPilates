@@ -106,12 +106,7 @@ namespace FichasPilates.Controller
     }
 
 
-    //public class ModeloFicha
-    //{
-    //    public string Nome { get; set; }
-
-    //    public string End { get; set; }
-    //}
+    
 
 
 }

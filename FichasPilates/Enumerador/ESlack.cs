@@ -17,6 +17,5 @@ namespace FichasPilates.Enumerador
 
         Equilibrio = 8,
 
-
     }
 }

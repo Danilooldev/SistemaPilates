@@ -341,7 +341,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -366,5 +365,6 @@
         public System.Windows.Forms.CheckedListBox chlReformer;
         public System.Windows.Forms.CheckedListBox chlEquilibrio;
         public System.Windows.Forms.Button btnSalvar;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -5,6 +5,7 @@ using FichasPilates.Repositorio;
 using FichasPilates.Utilitarios;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -48,7 +49,17 @@ namespace FichasPilates.Controller
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            PegarDadosTela();
+            var dadosDaTela = PegarDadosTela();
+
+
+
+            repositorio.Salvar(dadosDaTela);
+
+            //var objetoParaBanco = new ModelEvolucaoBancoDeDados(dadosDaTela);
+
+
+
+
             MessageBox.Show("Adicionado Com Sucesso!");
             
 
@@ -58,27 +69,22 @@ namespace FichasPilates.Controller
 
         private ModelEvolucao PegarDadosTela()
         {
-            var slacks = frm.chlSlack.CheckedItems;
-            var equilibrio = frm.chlEquilibrio.CheckedItems;
-            var solo = frm.chlSolo.CheckedItems;
-            var reformer = frm.chlReformer.CheckedItems;
-            var cadilac =frm.chlCadilac.CheckedItems;
-            var chair = frm.chlChair.CheckedItems;
-            var barrel = frm.chlBarrel.CheckedItems;
-            var skate = frm.chlSkate.CheckedItems;
-            var skier = frm.chlSkier.CheckedItems;
-            var lira = frm.chlLira.CheckedItems;
-            var fixball = frm.chlFixball.CheckedItems;
-
-
             ModelEvolucao modelo = new ModelEvolucao();
 
+            modelo.Slack = frm.chlSlack.RetornaSomatorioFlags<ESlack>();
+            modelo.Equilibrio = frm.chlEquilibrio.RetornaSomatorioFlags<EEquilibrio>();
+            modelo.Solo = frm.chlSolo.RetornaSomatorioFlags<ESolo>();
+            modelo.Reformer = frm.chlReformer.RetornaSomatorioFlags<EReformer>();
+            modelo.Cadilac = frm.chlCadilac.RetornaSomatorioFlags<ECadilac>();
+            modelo.Chair = frm.chlChair.RetornaSomatorioFlags<EChair>();
+            modelo.Barrel = frm.chlBarrel.RetornaSomatorioFlags<EBarrel>();
+            modelo.Skate = frm.chlSkate.RetornaSomatorioFlags<ESkate>();
+            modelo.Skier = frm.chlSkier.RetornaSomatorioFlags<ESkier>();
+            modelo.Lira = frm.chlLira.RetornaSomatorioFlags<ELira>();
+            modelo.Fixball = frm.chlFixball.RetornaSomatorioFlags<EFixball>();
+            modelo.Data = frm.dateTimePicker1.Value;
 
-            //modelo.Reformer = reformer;//
-
-
-
-            return null;
+            return modelo;
         }
         
 
@@ -98,7 +104,9 @@ namespace FichasPilates.Controller
             frm.chlLira.SetCheckedListBoxItemsGeneric<ELira>(0);
 
             frm.chlFixball.SetCheckedListBoxItemsGeneric<EFixball>(0);
+
         }
+
         
         
             

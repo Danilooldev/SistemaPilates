@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FichasPilates.Enumerador;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,7 +35,18 @@ namespace FichasPilates.Utilitarios
 
         }
 
+        public static T RetornaSomatorioFlags<T>(this CheckedListBox chl) where T : Enum
+        {
+            var lista = chl.CheckedItems;
 
+            int valor = 0;
 
+            foreach (var obj in lista)
+                valor += (int)Enum.Parse(typeof(T), obj.ToString().Replace(" ", String.Empty));
+
+            Type enumType = typeof(T);
+
+            return (T)Enum.ToObject(enumType, valor);
+        }
     }
 }

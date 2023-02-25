@@ -1161,7 +1161,6 @@
         private System.Windows.Forms.RadioButton rbtAnteriorJoelhosLateral;
         private System.Windows.Forms.RadioButton rbtAnteriorJoelhosMedial;
         private System.Windows.Forms.RadioButton rbtAnteriorJoelhosNormal;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Button btnAdicionar;
@@ -1177,5 +1176,6 @@
         public System.Windows.Forms.TextBox txtTel;
         public System.Windows.Forms.DateTimePicker dteNasc;
         public System.Windows.Forms.Button btnPesquisar;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }
