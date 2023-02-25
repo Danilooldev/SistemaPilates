@@ -23,6 +23,7 @@ namespace FichasPilates.Controller
 
             frm.Show();
             RetornaParaTelaEvolucao();
+            frm.dataGridView1.DataSource = repositorievolucao.Listar();
 
 
 
@@ -97,7 +98,7 @@ namespace FichasPilates.Controller
 
             return null;
 
-            frm.dataGridView1 = repositorievolucao.Listar();
+            
         }
 
 
