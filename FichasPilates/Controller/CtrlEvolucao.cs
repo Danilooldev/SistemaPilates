@@ -19,9 +19,14 @@ namespace FichasPilates.Controller
     {
         public FormEvolucao frm = new FormEvolucao();
         private EvolucaoRepository repositorio = new EvolucaoRepository();
+
+        private Int64 idUsuario;
         
-        public CtrlEvolucao() 
+        public CtrlEvolucao(Int64 idUsuario) 
         {
+            this.idUsuario = idUsuario;
+
+
             InicializarCamp();
 
             DelegarEventos();
@@ -51,16 +56,13 @@ namespace FichasPilates.Controller
         {
             var dadosDaTela = PegarDadosTela();
 
-
-
             repositorio.Salvar(dadosDaTela);
 
             //var objetoParaBanco = new ModelEvolucaoBancoDeDados(dadosDaTela);
 
-
-
-
             MessageBox.Show("Adicionado Com Sucesso!");
+
+            frm.DialogResult = DialogResult.OK;
             
 
 
@@ -71,6 +73,7 @@ namespace FichasPilates.Controller
         {
             ModelEvolucao modelo = new ModelEvolucao();
 
+            modelo.IdUsuario = this.idUsuario;
             modelo.Slack = frm.chlSlack.RetornaSomatorioFlags<ESlack>();
             modelo.Equilibrio = frm.chlEquilibrio.RetornaSomatorioFlags<EEquilibrio>();
             modelo.Solo = frm.chlSolo.RetornaSomatorioFlags<ESolo>();

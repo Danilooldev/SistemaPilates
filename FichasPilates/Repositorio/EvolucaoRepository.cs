@@ -13,9 +13,9 @@ namespace FichasPilates.Repositorio
     public class EvolucaoRepository : BaseRepository
     
     {
-        public IList<ModelEvolucao> Listar()
+        public IList<ModelEvolucao> Listar(Int64 idUsuario)
         {
-            return base.Connection.Query<ModelEvolucao>("SELECT * FROM Evolucao").ToList();
+            return base.Connection.Query<ModelEvolucao>($"SELECT * FROM Evolucao where idusuario ={idUsuario}").ToList();
 
         }
 

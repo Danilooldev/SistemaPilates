@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabFicha = new System.Windows.Forms.TabControl();
+            this.tabGeral = new System.Windows.Forms.TabControl();
             this.tabInfoBasica = new System.Windows.Forms.TabPage();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.rchObjetivo = new System.Windows.Forms.RichTextBox();
@@ -108,7 +108,7 @@
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.tabFicha.SuspendLayout();
+            this.tabGeral.SuspendLayout();
             this.tabInfoBasica.SuspendLayout();
             this.tabPostura.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -126,16 +126,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabFicha
+            // tabGeral
             // 
-            this.tabFicha.Controls.Add(this.tabInfoBasica);
-            this.tabFicha.Controls.Add(this.tabPostura);
-            this.tabFicha.Controls.Add(this.tabEvolucao);
-            this.tabFicha.Location = new System.Drawing.Point(12, 3);
-            this.tabFicha.Name = "tabFicha";
-            this.tabFicha.SelectedIndex = 0;
-            this.tabFicha.Size = new System.Drawing.Size(1013, 617);
-            this.tabFicha.TabIndex = 0;
+            this.tabGeral.Controls.Add(this.tabInfoBasica);
+            this.tabGeral.Controls.Add(this.tabPostura);
+            this.tabGeral.Controls.Add(this.tabEvolucao);
+            this.tabGeral.Location = new System.Drawing.Point(12, 3);
+            this.tabGeral.Name = "tabGeral";
+            this.tabGeral.SelectedIndex = 0;
+            this.tabGeral.Size = new System.Drawing.Size(1013, 617);
+            this.tabGeral.TabIndex = 0;
             // 
             // tabInfoBasica
             // 
@@ -393,6 +393,7 @@
             // 
             // tabPostura
             // 
+            this.tabPostura.Controls.Add(this.btnSalvar);
             this.tabPostura.Controls.Add(this.groupBox11);
             this.tabPostura.Controls.Add(this.groupBox10);
             this.tabPostura.Controls.Add(this.groupBox9);
@@ -1024,7 +1025,7 @@
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Location = new System.Drawing.Point(856, 79);
+            this.btnAdicionar.Location = new System.Drawing.Point(844, 79);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(140, 54);
             this.btnAdicionar.TabIndex = 1;
@@ -1043,7 +1044,7 @@
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(872, 626);
+            this.btnSalvar.Location = new System.Drawing.Point(835, 516);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(153, 57);
             this.btnSalvar.TabIndex = 1;
@@ -1056,12 +1057,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1039, 708);
-            this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.tabFicha);
+            this.Controls.Add(this.tabGeral);
             this.Name = "FarmFicha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ficha";
-            this.tabFicha.ResumeLayout(false);
+            this.tabGeral.ResumeLayout(false);
             this.tabInfoBasica.ResumeLayout(false);
             this.tabInfoBasica.PerformLayout();
             this.tabPostura.ResumeLayout(false);
@@ -1096,11 +1096,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabFicha;
-        private System.Windows.Forms.TabPage tabInfoBasica;
-        private System.Windows.Forms.TabPage tabPostura;
-        private System.Windows.Forms.TabPage tabEvolucao;
+        public System.Windows.Forms.TabPage tabInfoBasica;
+        public System.Windows.Forms.TabPage tabPostura;
+        public System.Windows.Forms.TabPage tabEvolucao;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -1115,53 +1113,52 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.RadioButton rbtAnteriorCabecaRodaEsq;
-        private System.Windows.Forms.RadioButton rbtAnteriorCabecaRodaDir;
-        private System.Windows.Forms.RadioButton rbtAnteriorCabecaIncliEsq;
-        private System.Windows.Forms.RadioButton rbtAnteriorCabecaIncliDir;
-        private System.Windows.Forms.RadioButton rbtAnteriorCabecaSimetrica;
-        private System.Windows.Forms.RadioButton rbtAnteriorPelveEsqAlta;
-        private System.Windows.Forms.RadioButton rbtAnteriorPelveDirAlta;
-        private System.Windows.Forms.RadioButton rbtAnteriorPelveSimetrica;
-        private System.Windows.Forms.RadioButton rbtAnteriorMamilosEsqAlta;
-        private System.Windows.Forms.RadioButton rbtAnteriorMamilosDirAlta;
-        private System.Windows.Forms.RadioButton rbtAnteriorMamilosSimetrica;
-        private System.Windows.Forms.RadioButton rbtAnteriorOmbroEsqAlta;
-        private System.Windows.Forms.RadioButton rbtAnteriorOmbroDirAlta;
-        private System.Windows.Forms.RadioButton rbtAnteriorOmbroSimetrica;
+        public System.Windows.Forms.RadioButton rbtAnteriorCabecaRodaEsq;
+        public System.Windows.Forms.RadioButton rbtAnteriorCabecaRodaDir;
+        public System.Windows.Forms.RadioButton rbtAnteriorCabecaIncliEsq;
+        public System.Windows.Forms.RadioButton rbtAnteriorCabecaIncliDir;
+        public System.Windows.Forms.RadioButton rbtAnteriorCabecaSimetrica;
+        public System.Windows.Forms.RadioButton rbtAnteriorPelveEsqAlta;
+        public System.Windows.Forms.RadioButton rbtAnteriorPelveDirAlta;
+        public System.Windows.Forms.RadioButton rbtAnteriorPelveSimetrica;
+        public System.Windows.Forms.RadioButton rbtAnteriorMamilosEsqAlta;
+        public System.Windows.Forms.RadioButton rbtAnteriorMamilosDirAlta;
+        public System.Windows.Forms.RadioButton rbtAnteriorMamilosSimetrica;
+        public System.Windows.Forms.RadioButton rbtAnteriorOmbroEsqAlta;
+        public System.Windows.Forms.RadioButton rbtAnteriorOmbroDirAlta;
+        public System.Windows.Forms.RadioButton rbtAnteriorOmbroSimetrica;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.RadioButton rbtAnteriorPesNormal;
-        private System.Windows.Forms.RadioButton rbtAnteriorPesCavo;
-        private System.Windows.Forms.RadioButton rbtAnteriorPesPlano;
+        public System.Windows.Forms.RadioButton rbtAnteriorPesNormal;
+        public System.Windows.Forms.RadioButton rbtAnteriorPesCavo;
+        public System.Windows.Forms.RadioButton rbtAnteriorPesPlano;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.RadioButton rbtLateralLombarLateral;
-        private System.Windows.Forms.RadioButton rbtLateralLombarMedial;
-        private System.Windows.Forms.RadioButton rbtLateralLombarNormal;
+        public System.Windows.Forms.RadioButton rbtLateralLombarLateral;
+        public System.Windows.Forms.RadioButton rbtLateralLombarMedial;
+        public System.Windows.Forms.RadioButton rbtLateralLombarNormal;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.RadioButton rbtLateralPelveSimetrica;
-        private System.Windows.Forms.RadioButton rbtLateralPelveDireitaMaisAlta;
-        private System.Windows.Forms.RadioButton rbtLateralPelveEsquerdaMaisAlta;
+        public System.Windows.Forms.RadioButton rbtLateralPelveSimetrica;
+        public System.Windows.Forms.RadioButton rbtLateralPelveDireitaMaisAlta;
+        public System.Windows.Forms.RadioButton rbtLateralPelveEsquerdaMaisAlta;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.RadioButton rbtLateralToracicaSimetrica;
-        private System.Windows.Forms.RadioButton rbtLateralToracicaDireitaMaisAlta;
-        private System.Windows.Forms.RadioButton rbtLateralToracicaEsquerdaMaisAlta;
+        public System.Windows.Forms.RadioButton rbtLateralToracicaSimetrica;
+        public System.Windows.Forms.RadioButton rbtLateralToracicaDireitaMaisAlta;
+        public System.Windows.Forms.RadioButton rbtLateralToracicaEsquerdaMaisAlta;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.RadioButton rbtLateralOmbroSimetrica;
-        private System.Windows.Forms.RadioButton rbtLateralOmbroDireitaMaisAlta;
-        private System.Windows.Forms.RadioButton rbtLateralOmbroEsquerdaMaisAlta;
+        public System.Windows.Forms.RadioButton rbtLateralOmbroSimetrica;
+        public System.Windows.Forms.RadioButton rbtLateralOmbroDireitaMaisAlta;
+        public System.Windows.Forms.RadioButton rbtLateralOmbroEsquerdaMaisAlta;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.RadioButton rbtLateralCabecaAlinhada;
-        private System.Windows.Forms.RadioButton rbtLateralCabecaAnteriorizada;
+        public System.Windows.Forms.RadioButton rbtLateralCabecaAlinhada;
+        public System.Windows.Forms.RadioButton rbtLateralCabecaAnteriorizada;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox grupopinto;
-        private System.Windows.Forms.RadioButton rbtAnteriorJoelhosLateral;
-        private System.Windows.Forms.RadioButton rbtAnteriorJoelhosMedial;
-        private System.Windows.Forms.RadioButton rbtAnteriorJoelhosNormal;
-        private System.Windows.Forms.Button btnSalvar;
+        public System.Windows.Forms.RadioButton rbtAnteriorJoelhosLateral;
+        public System.Windows.Forms.RadioButton rbtAnteriorJoelhosMedial;
+        public System.Windows.Forms.RadioButton rbtAnteriorJoelhosNormal;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Button btnAdicionar;
         public System.Windows.Forms.TextBox txtQueixaPrincipal;
@@ -1177,5 +1174,7 @@
         public System.Windows.Forms.DateTimePicker dteNasc;
         public System.Windows.Forms.Button btnPesquisar;
         public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.Button btnSalvar;
+        public System.Windows.Forms.TabControl tabGeral;
     }
 }
