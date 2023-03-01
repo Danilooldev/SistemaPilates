@@ -55,6 +55,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPostura = new System.Windows.Forms.TabPage();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.rbtLateralLombarLateral = new System.Windows.Forms.RadioButton();
             this.rbtLateralLombarMedial = new System.Windows.Forms.RadioButton();
@@ -107,7 +108,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.tabGeral.SuspendLayout();
             this.tabInfoBasica.SuspendLayout();
             this.tabPostura.SuspendLayout();
@@ -134,7 +134,7 @@
             this.tabGeral.Location = new System.Drawing.Point(12, 3);
             this.tabGeral.Name = "tabGeral";
             this.tabGeral.SelectedIndex = 0;
-            this.tabGeral.Size = new System.Drawing.Size(1013, 617);
+            this.tabGeral.Size = new System.Drawing.Size(1013, 693);
             this.tabGeral.TabIndex = 0;
             // 
             // tabInfoBasica
@@ -411,10 +411,22 @@
             this.tabPostura.Location = new System.Drawing.Point(4, 22);
             this.tabPostura.Name = "tabPostura";
             this.tabPostura.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPostura.Size = new System.Drawing.Size(1005, 591);
+            this.tabPostura.Size = new System.Drawing.Size(1005, 667);
             this.tabPostura.TabIndex = 1;
             this.tabPostura.Text = "Postura";
             this.tabPostura.UseVisualStyleBackColor = true;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(810, 529);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(153, 57);
+            this.btnSalvar.TabIndex = 1;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // groupBox11
             // 
@@ -1007,7 +1019,7 @@
             this.tabEvolucao.Location = new System.Drawing.Point(4, 22);
             this.tabEvolucao.Name = "tabEvolucao";
             this.tabEvolucao.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEvolucao.Size = new System.Drawing.Size(1005, 591);
+            this.tabEvolucao.Size = new System.Drawing.Size(1005, 667);
             this.tabEvolucao.TabIndex = 2;
             this.tabEvolucao.Text = "Evolução";
             this.tabEvolucao.UseVisualStyleBackColor = true;
@@ -1039,18 +1051,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(794, 484);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(835, 516);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(153, 57);
-            this.btnSalvar.TabIndex = 1;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // FarmFicha
             // 
