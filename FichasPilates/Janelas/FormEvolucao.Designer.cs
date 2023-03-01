@@ -142,7 +142,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(591, 165);
+            this.label8.Location = new System.Drawing.Point(588, 164);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 16);
             this.label8.TabIndex = 8;
@@ -152,7 +152,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(713, 165);
+            this.label9.Location = new System.Drawing.Point(39, 347);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 16);
             this.label9.TabIndex = 9;
@@ -162,7 +162,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(820, 165);
+            this.label10.Location = new System.Drawing.Point(149, 347);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 16);
             this.label10.TabIndex = 10;
@@ -172,7 +172,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(932, 165);
+            this.label11.Location = new System.Drawing.Point(259, 347);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 16);
             this.label11.TabIndex = 11;
@@ -182,7 +182,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1047, 164);
+            this.label12.Location = new System.Drawing.Point(382, 347);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(43, 16);
             this.label12.TabIndex = 12;
@@ -192,7 +192,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1146, 165);
+            this.label13.Location = new System.Drawing.Point(488, 347);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(73, 16);
             this.label13.TabIndex = 13;
@@ -218,7 +218,7 @@
             // chlFixball
             // 
             this.chlFixball.FormattingEnabled = true;
-            this.chlFixball.Location = new System.Drawing.Point(1129, 184);
+            this.chlFixball.Location = new System.Drawing.Point(463, 366);
             this.chlFixball.Name = "chlFixball";
             this.chlFixball.Size = new System.Drawing.Size(105, 124);
             this.chlFixball.TabIndex = 17;
@@ -226,7 +226,7 @@
             // chlLira
             // 
             this.chlLira.FormattingEnabled = true;
-            this.chlLira.Location = new System.Drawing.Point(1018, 184);
+            this.chlLira.Location = new System.Drawing.Point(352, 366);
             this.chlLira.Name = "chlLira";
             this.chlLira.Size = new System.Drawing.Size(105, 124);
             this.chlLira.TabIndex = 18;
@@ -234,7 +234,7 @@
             // chlSkier
             // 
             this.chlSkier.FormattingEnabled = true;
-            this.chlSkier.Location = new System.Drawing.Point(907, 183);
+            this.chlSkier.Location = new System.Drawing.Point(241, 366);
             this.chlSkier.Name = "chlSkier";
             this.chlSkier.Size = new System.Drawing.Size(105, 124);
             this.chlSkier.TabIndex = 19;
@@ -242,7 +242,7 @@
             // chlSlack
             // 
             this.chlSlack.FormattingEnabled = true;
-            this.chlSlack.Location = new System.Drawing.Point(796, 183);
+            this.chlSlack.Location = new System.Drawing.Point(130, 366);
             this.chlSlack.Name = "chlSlack";
             this.chlSlack.Size = new System.Drawing.Size(105, 124);
             this.chlSlack.TabIndex = 20;
@@ -250,7 +250,7 @@
             // chlSkate
             // 
             this.chlSkate.FormattingEnabled = true;
-            this.chlSkate.Location = new System.Drawing.Point(685, 183);
+            this.chlSkate.Location = new System.Drawing.Point(19, 366);
             this.chlSkate.Name = "chlSkate";
             this.chlSkate.Size = new System.Drawing.Size(105, 124);
             this.chlSkate.TabIndex = 21;
@@ -292,7 +292,7 @@
             this.btnSalvar.BackColor = System.Drawing.Color.DarkGreen;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.Black;
-            this.btnSalvar.Location = new System.Drawing.Point(19, 334);
+            this.btnSalvar.Location = new System.Drawing.Point(550, 517);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(129, 50);
             this.btnSalvar.TabIndex = 26;
@@ -303,7 +303,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1255, 500);
+            this.ClientSize = new System.Drawing.Size(752, 612);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.chlReformer);
             this.Controls.Add(this.chlCadilac);

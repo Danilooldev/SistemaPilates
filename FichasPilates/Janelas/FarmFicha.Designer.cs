@@ -139,6 +139,7 @@
             // 
             // tabInfoBasica
             // 
+            this.tabInfoBasica.BackColor = System.Drawing.Color.LightGray;
             this.tabInfoBasica.Controls.Add(this.btnPesquisar);
             this.tabInfoBasica.Controls.Add(this.rchObjetivo);
             this.tabInfoBasica.Controls.Add(this.txtTel);
@@ -166,13 +167,13 @@
             this.tabInfoBasica.Location = new System.Drawing.Point(4, 22);
             this.tabInfoBasica.Name = "tabInfoBasica";
             this.tabInfoBasica.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInfoBasica.Size = new System.Drawing.Size(1005, 591);
+            this.tabInfoBasica.Size = new System.Drawing.Size(1005, 667);
             this.tabInfoBasica.TabIndex = 0;
             this.tabInfoBasica.Text = "Ficha";
-            this.tabInfoBasica.UseVisualStyleBackColor = true;
             // 
             // btnPesquisar
             // 
+            this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.Location = new System.Drawing.Point(727, 72);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(74, 30);
@@ -185,7 +186,7 @@
             this.rchObjetivo.Enabled = false;
             this.rchObjetivo.Location = new System.Drawing.Point(135, 424);
             this.rchObjetivo.Name = "rchObjetivo";
-            this.rchObjetivo.Size = new System.Drawing.Size(586, 161);
+            this.rchObjetivo.Size = new System.Drawing.Size(666, 193);
             this.rchObjetivo.TabIndex = 22;
             this.rchObjetivo.Text = "";
             // 
@@ -194,7 +195,7 @@
             this.txtTel.Enabled = false;
             this.txtTel.Location = new System.Drawing.Point(116, 170);
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(100, 20);
+            this.txtTel.Size = new System.Drawing.Size(166, 20);
             this.txtTel.TabIndex = 21;
             // 
             // dteNasc
@@ -235,7 +236,7 @@
             this.txtPatologia.Enabled = false;
             this.txtPatologia.Location = new System.Drawing.Point(116, 235);
             this.txtPatologia.Name = "txtPatologia";
-            this.txtPatologia.Size = new System.Drawing.Size(371, 20);
+            this.txtPatologia.Size = new System.Drawing.Size(380, 20);
             this.txtPatologia.TabIndex = 16;
             // 
             // txtProfissao
@@ -243,15 +244,15 @@
             this.txtProfissao.Enabled = false;
             this.txtProfissao.Location = new System.Drawing.Point(116, 202);
             this.txtProfissao.Name = "txtProfissao";
-            this.txtProfissao.Size = new System.Drawing.Size(371, 20);
+            this.txtProfissao.Size = new System.Drawing.Size(380, 20);
             this.txtProfissao.TabIndex = 15;
             // 
             // txtCel
             // 
             this.txtCel.Enabled = false;
-            this.txtCel.Location = new System.Drawing.Point(365, 174);
+            this.txtCel.Location = new System.Drawing.Point(345, 170);
             this.txtCel.Name = "txtCel";
-            this.txtCel.Size = new System.Drawing.Size(122, 20);
+            this.txtCel.Size = new System.Drawing.Size(151, 20);
             this.txtCel.TabIndex = 14;
             // 
             // txtSexo
@@ -345,7 +346,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(302, 174);
+            this.label5.Location = new System.Drawing.Point(288, 174);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 16);
             this.label5.TabIndex = 4;
@@ -393,17 +394,18 @@
             // 
             // tabPostura
             // 
+            this.tabPostura.BackColor = System.Drawing.Color.LightGray;
             this.tabPostura.Controls.Add(this.btnSalvar);
             this.tabPostura.Controls.Add(this.groupBox11);
             this.tabPostura.Controls.Add(this.groupBox10);
             this.tabPostura.Controls.Add(this.groupBox9);
             this.tabPostura.Controls.Add(this.groupBox8);
+            this.tabPostura.Controls.Add(this.groupBox2);
             this.tabPostura.Controls.Add(this.groupBox7);
             this.tabPostura.Controls.Add(this.groupBox6);
             this.tabPostura.Controls.Add(this.grupopinto);
             this.tabPostura.Controls.Add(this.groupBox4);
             this.tabPostura.Controls.Add(this.groupBox3);
-            this.tabPostura.Controls.Add(this.groupBox2);
             this.tabPostura.Controls.Add(this.groupBox1);
             this.tabPostura.Controls.Add(this.label21);
             this.tabPostura.Controls.Add(this.label15);
@@ -414,13 +416,12 @@
             this.tabPostura.Size = new System.Drawing.Size(1005, 667);
             this.tabPostura.TabIndex = 1;
             this.tabPostura.Text = "Postura";
-            this.tabPostura.UseVisualStyleBackColor = true;
             // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(810, 529);
+            this.btnSalvar.Location = new System.Drawing.Point(810, 545);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(153, 57);
             this.btnSalvar.TabIndex = 1;
@@ -436,7 +437,7 @@
             this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.Location = new System.Drawing.Point(666, 368);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(134, 140);
+            this.groupBox11.Size = new System.Drawing.Size(143, 140);
             this.groupBox11.TabIndex = 42;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Coluna Lombar";
@@ -483,9 +484,9 @@
             this.groupBox10.Controls.Add(this.rbtLateralPelveDireitaMaisAlta);
             this.groupBox10.Controls.Add(this.rbtLateralPelveEsquerdaMaisAlta);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(516, 368);
+            this.groupBox10.Location = new System.Drawing.Point(507, 368);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(134, 140);
+            this.groupBox10.Size = new System.Drawing.Size(140, 140);
             this.groupBox10.TabIndex = 41;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Pelve";
@@ -532,9 +533,9 @@
             this.groupBox9.Controls.Add(this.rbtLateralToracicaDireitaMaisAlta);
             this.groupBox9.Controls.Add(this.rbtLateralToracicaEsquerdaMaisAlta);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.Location = new System.Drawing.Point(357, 368);
+            this.groupBox9.Location = new System.Drawing.Point(348, 368);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(134, 140);
+            this.groupBox9.Size = new System.Drawing.Size(143, 140);
             this.groupBox9.TabIndex = 40;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Coluna Torácica";
@@ -581,9 +582,9 @@
             this.groupBox8.Controls.Add(this.rbtLateralOmbroDireitaMaisAlta);
             this.groupBox8.Controls.Add(this.rbtLateralOmbroEsquerdaMaisAlta);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(207, 368);
+            this.groupBox8.Location = new System.Drawing.Point(189, 368);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(125, 140);
+            this.groupBox8.Size = new System.Drawing.Size(143, 140);
             this.groupBox8.TabIndex = 39;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Ombro";
@@ -666,9 +667,9 @@
             this.groupBox6.Controls.Add(this.rbtAnteriorPesCavo);
             this.groupBox6.Controls.Add(this.rbtAnteriorPesNormal);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(829, 99);
+            this.groupBox6.Location = new System.Drawing.Point(820, 99);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(134, 140);
+            this.groupBox6.Size = new System.Drawing.Size(143, 140);
             this.groupBox6.TabIndex = 42;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Pés";
@@ -717,7 +718,7 @@
             this.grupopinto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grupopinto.Location = new System.Drawing.Point(666, 99);
             this.grupopinto.Name = "grupopinto";
-            this.grupopinto.Size = new System.Drawing.Size(134, 140);
+            this.grupopinto.Size = new System.Drawing.Size(143, 140);
             this.grupopinto.TabIndex = 41;
             this.grupopinto.TabStop = false;
             this.grupopinto.Text = "Joelhos";
@@ -764,9 +765,9 @@
             this.groupBox4.Controls.Add(this.rbtAnteriorPelveDirAlta);
             this.groupBox4.Controls.Add(this.rbtAnteriorPelveEsqAlta);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(516, 99);
+            this.groupBox4.Location = new System.Drawing.Point(507, 99);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(134, 140);
+            this.groupBox4.Size = new System.Drawing.Size(143, 140);
             this.groupBox4.TabIndex = 40;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Pelve";
@@ -813,9 +814,9 @@
             this.groupBox3.Controls.Add(this.rbtAnteriorMamilosDirAlta);
             this.groupBox3.Controls.Add(this.rbtAnteriorMamilosEsqAlta);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(357, 99);
+            this.groupBox3.Location = new System.Drawing.Point(348, 99);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(134, 140);
+            this.groupBox3.Size = new System.Drawing.Size(143, 140);
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Mamilos";
@@ -862,9 +863,9 @@
             this.groupBox2.Controls.Add(this.rbtAnteriorOmbroDirAlta);
             this.groupBox2.Controls.Add(this.rbtAnteriorOmbroEsqAlta);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(207, 99);
+            this.groupBox2.Location = new System.Drawing.Point(189, 99);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(125, 140);
+            this.groupBox2.Size = new System.Drawing.Size(143, 140);
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ombro";
@@ -984,7 +985,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(38, 320);
+            this.label21.Location = new System.Drawing.Point(38, 324);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(163, 20);
             this.label21.TabIndex = 28;
@@ -1013,6 +1014,7 @@
             // 
             // tabEvolucao
             // 
+            this.tabEvolucao.BackColor = System.Drawing.Color.LightGray;
             this.tabEvolucao.Controls.Add(this.label14);
             this.tabEvolucao.Controls.Add(this.btnAdicionar);
             this.tabEvolucao.Controls.Add(this.dataGridView1);
@@ -1022,7 +1024,6 @@
             this.tabEvolucao.Size = new System.Drawing.Size(1005, 667);
             this.tabEvolucao.TabIndex = 2;
             this.tabEvolucao.Text = "Evolução";
-            this.tabEvolucao.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -1046,9 +1047,14 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Location = new System.Drawing.Point(30, 79);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(794, 484);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -1056,6 +1062,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1039, 708);
             this.Controls.Add(this.tabGeral);
             this.Name = "FarmFicha";

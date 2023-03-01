@@ -19,6 +19,11 @@ namespace FichasPilates
             InitializeComponent();
         }
 
+        private void btnNovaFicha_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //private void btnNovaFicha_Click(object sender, EventArgs e)
         //{
         //    FormNovaFicha formNovaFicha = new FormNovaFicha();

@@ -98,7 +98,7 @@
             // lblCelular
             // 
             this.lblCelular.AutoSize = true;
-            this.lblCelular.Location = new System.Drawing.Point(294, 196);
+            this.lblCelular.Location = new System.Drawing.Point(304, 196);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(64, 16);
             this.lblCelular.TabIndex = 4;
@@ -244,9 +244,9 @@
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(140, 196);
+            this.txtTel.Location = new System.Drawing.Point(374, 193);
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(122, 22);
+            this.txtTel.Size = new System.Drawing.Size(158, 22);
             this.txtTel.TabIndex = 20;
             // 
             // txtProfissao
@@ -286,7 +286,7 @@
             // 
             // txtCel
             // 
-            this.txtCel.Location = new System.Drawing.Point(364, 196);
+            this.txtCel.Location = new System.Drawing.Point(140, 193);
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(158, 22);
             this.txtCel.TabIndex = 26;

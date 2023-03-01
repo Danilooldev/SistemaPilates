@@ -36,13 +36,13 @@
             // 
             this.btnNovaFicha.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnNovaFicha.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovaFicha.Location = new System.Drawing.Point(190, 111);
+            this.btnNovaFicha.Location = new System.Drawing.Point(151, 180);
             this.btnNovaFicha.Name = "btnNovaFicha";
-            this.btnNovaFicha.Size = new System.Drawing.Size(191, 41);
+            this.btnNovaFicha.Size = new System.Drawing.Size(204, 41);
             this.btnNovaFicha.TabIndex = 0;
             this.btnNovaFicha.Text = "Nova Ficha";
             this.btnNovaFicha.UseVisualStyleBackColor = false;
-           
+            this.btnNovaFicha.Click += new System.EventHandler(this.btnNovaFicha_Click);
             // 
             // btnBuscarFicha
             // 
@@ -50,19 +50,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBuscarFicha.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnBuscarFicha.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarFicha.Location = new System.Drawing.Point(190, 51);
+            this.btnBuscarFicha.Location = new System.Drawing.Point(151, 115);
             this.btnBuscarFicha.Name = "btnBuscarFicha";
-            this.btnBuscarFicha.Size = new System.Drawing.Size(191, 41);
+            this.btnBuscarFicha.Size = new System.Drawing.Size(204, 41);
             this.btnBuscarFicha.TabIndex = 1;
             this.btnBuscarFicha.Text = "Buscar Ficha";
             this.btnBuscarFicha.UseVisualStyleBackColor = false;
-           
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 302);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(510, 302);
             this.Controls.Add(this.btnBuscarFicha);
             this.Controls.Add(this.btnNovaFicha);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

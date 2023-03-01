@@ -90,6 +90,7 @@
   <ItemGroup>
     <Compile Include="Controller\CtrlEvolucao.cs" />
     <Compile Include="Controller\CtrlFicha.cs" />
+    <Compile Include="Controller\CtrlGridEvolucao.cs" />
     <Compile Include="Controller\CtrlNovaFicha.cs" />
     <Compile Include="Controller\CtrlPesquisaPaciente.cs" />
     <Compile Include="Controller\CtrlPrincipal.cs" />
