@@ -21,32 +21,38 @@ namespace FichasPilates.Controller
         private EvolucaoRepository repositorio = new EvolucaoRepository();
 
         private Int64 idUsuario;
+        private Int64 id;
         
         public CtrlEvolucao(Int64 idUsuario) 
         {
             this.idUsuario = idUsuario;
 
-
-            InicializarCamp();
+            InicializarCamp(null);
 
             DelegarEventos();
 
             frm.ShowDialog();
             
-
-        
         }
+
+        public CtrlEvolucao(ModelEvolucao evolucao)
+        {
+            this.idUsuario = evolucao.IdUsuario;
+            this.id = evolucao.Id;
+
+            InicializarCamp(evolucao);
+
+            DelegarEventos();
+
+            frm.ShowDialog();
+        }
+
 
         private void DelegarEventos()
         {
-
             ModelEvolucao model = new ModelEvolucao();
-
-
-            frm.btnSalvar.Click += BtnSalvar_Click;
             
-         
-
+            frm.btnSalvar.Click += BtnSalvar_Click;
             
         }
         
@@ -68,11 +74,11 @@ namespace FichasPilates.Controller
 
         }
         
-
         private ModelEvolucao PegarDadosTela()
         {
             ModelEvolucao modelo = new ModelEvolucao();
 
+            modelo.Id = this.id;
             modelo.IdUsuario = this.idUsuario;
             modelo.Slack = frm.chlSlack.RetornaSomatorioFlags<ESlack>();
             modelo.Equilibrio = frm.chlEquilibrio.RetornaSomatorioFlags<EEquilibrio>();
@@ -92,33 +98,42 @@ namespace FichasPilates.Controller
         
 
 
-        private void InicializarCamp()
+        private void InicializarCamp(ModelEvolucao modelo)
         {
-            frm.chlEquilibrio.SetCheckedListBoxItemsGeneric<EEquilibrio>(0);
-            frm.chlSolo.SetCheckedListBoxItemsGeneric<ESolo>(0);
-            frm.chlReformer.SetCheckedListBoxItemsGeneric<EReformer>(0);
-            frm.chlCadilac.SetCheckedListBoxItemsGeneric<ECadilac>(0);
-            frm.chlChair.SetCheckedListBoxItemsGeneric<EChair>(0);
+            if (modelo == null)
+            {
 
-            frm.chlBarrel.SetCheckedListBoxItemsGeneric<EBarrel>(0);
-            frm.chlSkate.SetCheckedListBoxItemsGeneric<ESkate>(0);
-            frm.chlSlack.SetCheckedListBoxItemsGeneric<ESlack>(0);
-            frm.chlSkier.SetCheckedListBoxItemsGeneric<ESkier>(0);
-            frm.chlLira.SetCheckedListBoxItemsGeneric<ELira>(0);
+                frm.chlEquilibrio.SetCheckedListBoxItemsGeneric<EEquilibrio>(0);
+                frm.chlSolo.SetCheckedListBoxItemsGeneric<ESolo>(0);
+                frm.chlReformer.SetCheckedListBoxItemsGeneric<EReformer>(0);
+                frm.chlCadilac.SetCheckedListBoxItemsGeneric<ECadilac>(0);
+                frm.chlChair.SetCheckedListBoxItemsGeneric<EChair>(0);
 
-            frm.chlFixball.SetCheckedListBoxItemsGeneric<EFixball>(0);
+                frm.chlBarrel.SetCheckedListBoxItemsGeneric<EBarrel>(0);
+                frm.chlSkate.SetCheckedListBoxItemsGeneric<ESkate>(0);
+                frm.chlSlack.SetCheckedListBoxItemsGeneric<ESlack>(0);
+                frm.chlSkier.SetCheckedListBoxItemsGeneric<ESkier>(0);
+                frm.chlLira.SetCheckedListBoxItemsGeneric<ELira>(0);
 
+                frm.chlFixball.SetCheckedListBoxItemsGeneric<EFixball>(0);
+
+            }
+            else
+            {
+                frm.chlEquilibrio.SetCheckedListBoxItemsGeneric<EEquilibrio>((int)modelo.Equilibrio);
+                frm.chlSolo.SetCheckedListBoxItemsGeneric<ESolo>((int)modelo.Solo);
+                frm.chlReformer.SetCheckedListBoxItemsGeneric<EReformer>((int)modelo.Reformer);
+                frm.chlCadilac.SetCheckedListBoxItemsGeneric<ECadilac>((int)modelo.Cadilac);
+                frm.chlChair.SetCheckedListBoxItemsGeneric<EChair>((int)modelo.Chair);
+
+                frm.chlBarrel.SetCheckedListBoxItemsGeneric<EBarrel>((int)modelo.Barrel);
+                frm.chlSkate.SetCheckedListBoxItemsGeneric<ESkate>((int)modelo.Skate);
+                frm.chlSlack.SetCheckedListBoxItemsGeneric<ESlack>((int)modelo.Slack);
+                frm.chlSkier.SetCheckedListBoxItemsGeneric<ESkier>((int)modelo.Skier);
+                frm.chlLira.SetCheckedListBoxItemsGeneric<ELira>((int)modelo.Lira);
+
+                frm.chlFixball.SetCheckedListBoxItemsGeneric<EFixball>((int)modelo.Fixball);
+            }
         }
-
-        
-        
-            
-            
-           
-
-
-
-
-
     }
 }

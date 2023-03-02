@@ -201,6 +201,7 @@
             // 
             // chlEquilibrio
             // 
+            this.chlEquilibrio.CheckOnClick = true;
             this.chlEquilibrio.FormattingEnabled = true;
             this.chlEquilibrio.Location = new System.Drawing.Point(19, 183);
             this.chlEquilibrio.Name = "chlEquilibrio";
@@ -209,6 +210,7 @@
             // 
             // chlSolo
             // 
+            this.chlSolo.CheckOnClick = true;
             this.chlSolo.FormattingEnabled = true;
             this.chlSolo.Location = new System.Drawing.Point(130, 183);
             this.chlSolo.Name = "chlSolo";
@@ -217,6 +219,7 @@
             // 
             // chlFixball
             // 
+            this.chlFixball.CheckOnClick = true;
             this.chlFixball.FormattingEnabled = true;
             this.chlFixball.Location = new System.Drawing.Point(463, 366);
             this.chlFixball.Name = "chlFixball";
@@ -225,6 +228,7 @@
             // 
             // chlLira
             // 
+            this.chlLira.CheckOnClick = true;
             this.chlLira.FormattingEnabled = true;
             this.chlLira.Location = new System.Drawing.Point(352, 366);
             this.chlLira.Name = "chlLira";
@@ -233,6 +237,7 @@
             // 
             // chlSkier
             // 
+            this.chlSkier.CheckOnClick = true;
             this.chlSkier.FormattingEnabled = true;
             this.chlSkier.Location = new System.Drawing.Point(241, 366);
             this.chlSkier.Name = "chlSkier";
@@ -241,6 +246,7 @@
             // 
             // chlSlack
             // 
+            this.chlSlack.CheckOnClick = true;
             this.chlSlack.FormattingEnabled = true;
             this.chlSlack.Location = new System.Drawing.Point(130, 366);
             this.chlSlack.Name = "chlSlack";
@@ -249,6 +255,7 @@
             // 
             // chlSkate
             // 
+            this.chlSkate.CheckOnClick = true;
             this.chlSkate.FormattingEnabled = true;
             this.chlSkate.Location = new System.Drawing.Point(19, 366);
             this.chlSkate.Name = "chlSkate";
@@ -257,6 +264,7 @@
             // 
             // chlBarrel
             // 
+            this.chlBarrel.CheckOnClick = true;
             this.chlBarrel.FormattingEnabled = true;
             this.chlBarrel.Location = new System.Drawing.Point(574, 184);
             this.chlBarrel.Name = "chlBarrel";
@@ -265,6 +273,7 @@
             // 
             // chlChair
             // 
+            this.chlChair.CheckOnClick = true;
             this.chlChair.FormattingEnabled = true;
             this.chlChair.Location = new System.Drawing.Point(463, 184);
             this.chlChair.Name = "chlChair";
@@ -273,6 +282,7 @@
             // 
             // chlCadilac
             // 
+            this.chlCadilac.CheckOnClick = true;
             this.chlCadilac.FormattingEnabled = true;
             this.chlCadilac.Location = new System.Drawing.Point(352, 184);
             this.chlCadilac.Name = "chlCadilac";
@@ -281,6 +291,7 @@
             // 
             // chlReformer
             // 
+            this.chlReformer.CheckOnClick = true;
             this.chlReformer.FormattingEnabled = true;
             this.chlReformer.Location = new System.Drawing.Point(241, 183);
             this.chlReformer.Name = "chlReformer";

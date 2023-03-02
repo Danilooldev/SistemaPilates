@@ -4,8 +4,11 @@ using FichasPilates.Repositorio;
 using FichasPilates.Utilitarios;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing.Text;
+using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -40,6 +43,7 @@ namespace FichasPilates.Controller
 
 
 
+
         public CtrlFicha()
         {
             DelegarEvento();
@@ -49,7 +53,7 @@ namespace FichasPilates.Controller
             frm.tabGeral.TabPages.Remove(frm.tabEvolucao);
 
             frm.Show();
-            RetornaParaTelaEvolucao();
+
 
 
             CarregarRadios();
@@ -82,6 +86,21 @@ namespace FichasPilates.Controller
             frm.btnPesquisar.Click += BtnPesquiar;
             frm.btnSalvar.Click += BtnSalvar_Click;
 
+            frm.dataGridView1.DoubleClick += DataGridView1_DoubleClick;
+
+        }
+
+        private void DataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            var modelo = RetornaParaTelaEvolucao();
+
+            if (modelo != null)
+            {
+                CtrlEvolucao ctrl = new CtrlEvolucao(modelo);
+
+                if (ctrl.frm.DialogResult.Equals(DialogResult.OK))
+                    ObjetoPAraAbaEvolucao(idUsuario);
+            }
         }
 
         private void BtnSalvar_Click(object sender, EventArgs e)
@@ -152,21 +171,9 @@ namespace FichasPilates.Controller
         private void ObjetoPAraAbaEvolucao(Int64 idUsuario)
         {
             frm.dataGridView1.DataSource = repositorievolucao.Listar(idUsuario);
+
+            TratamentoGridEvolucao();
         }
-
-
-        public ModelEvolucao RetornaParaTelaEvolucao()
-        {
-            if (frm.DialogResult == DialogResult.OK &&
-                frm.dataGridView1.Rows.Count > 0)
-                return frm.dataGridView1.Rows[frm.dataGridView1.CurrentRow.Index].DataBoundItem as ModelEvolucao;
-
-            return null;
-
-
-        }
-
-
 
         #region Postura
 
@@ -270,6 +277,25 @@ namespace FichasPilates.Controller
 
         #endregion
 
+
+        #region Evolução
+
+        private ModelEvolucao RetornaParaTelaEvolucao()
+        {
+            if (frm.dataGridView1.Rows.Count > 0)
+                return frm.dataGridView1.Rows[frm.dataGridView1.CurrentRow.Index].DataBoundItem as ModelEvolucao;
+
+            return null;
+
+        }
+
+        private void TratamentoGridEvolucao()
+        {
+            this.frm.dataGridView1.Columns[1].Visible = false;
+            this.frm.dataGridView1.Columns[2].Visible = false;
+        }
+
+        #endregion
     }
 }
 

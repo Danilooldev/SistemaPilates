@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FichasPilates.Utilitarios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 namespace FichasPilates.Enumerador
 {
     [Flags]
+    [TypeConverter(typeof(EnumDescricaoListagem))]
     public enum ESolo
     {
 

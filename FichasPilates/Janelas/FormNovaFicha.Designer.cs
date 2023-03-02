@@ -204,7 +204,7 @@
             // dteNascimento
             // 
             this.dteNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dteNascimento.Location = new System.Drawing.Point(145, 116);
+            this.dteNascimento.Location = new System.Drawing.Point(145, 111);
             this.dteNascimento.Name = "dteNascimento";
             this.dteNascimento.Size = new System.Drawing.Size(200, 22);
             this.dteNascimento.TabIndex = 15;
@@ -221,7 +221,7 @@
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSalvar.Font = new System.Drawing.Font("Segoe UI Historic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(706, 683);
+            this.btnSalvar.Location = new System.Drawing.Point(694, 693);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(103, 49);
             this.btnSalvar.TabIndex = 17;
@@ -302,7 +302,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 817);
+            this.BackgroundImage = global::FichasPilates.Properties.Resources.pngwing_com;
+            this.ClientSize = new System.Drawing.Size(847, 788);
             this.Controls.Add(this.txtAnamnese);
             this.Controls.Add(this.txtCel);
             this.Controls.Add(this.txtCirurgias);

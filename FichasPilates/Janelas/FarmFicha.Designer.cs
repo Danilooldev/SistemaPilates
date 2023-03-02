@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FarmFicha));
             this.tabGeral = new System.Windows.Forms.TabControl();
             this.tabInfoBasica = new System.Windows.Forms.TabPage();
             this.btnPesquisar = new System.Windows.Forms.Button();
@@ -72,6 +73,10 @@
             this.rbtLateralOmbroSimetrica = new System.Windows.Forms.RadioButton();
             this.rbtLateralOmbroDireitaMaisAlta = new System.Windows.Forms.RadioButton();
             this.rbtLateralOmbroEsquerdaMaisAlta = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbtAnteriorOmbroSimetrica = new System.Windows.Forms.RadioButton();
+            this.rbtAnteriorOmbroDirAlta = new System.Windows.Forms.RadioButton();
+            this.rbtAnteriorOmbroEsqAlta = new System.Windows.Forms.RadioButton();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.rbtLateralCabecaAlinhada = new System.Windows.Forms.RadioButton();
             this.rbtLateralCabecaAnteriorizada = new System.Windows.Forms.RadioButton();
@@ -91,10 +96,6 @@
             this.rbtAnteriorMamilosSimetrica = new System.Windows.Forms.RadioButton();
             this.rbtAnteriorMamilosDirAlta = new System.Windows.Forms.RadioButton();
             this.rbtAnteriorMamilosEsqAlta = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rbtAnteriorOmbroSimetrica = new System.Windows.Forms.RadioButton();
-            this.rbtAnteriorOmbroDirAlta = new System.Windows.Forms.RadioButton();
-            this.rbtAnteriorOmbroEsqAlta = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbtAnteriorCabecaSimetrica = new System.Windows.Forms.RadioButton();
             this.rbtAnteriorCabecaIncliDir = new System.Windows.Forms.RadioButton();
@@ -108,6 +109,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabGeral.SuspendLayout();
             this.tabInfoBasica.SuspendLayout();
             this.tabPostura.SuspendLayout();
@@ -115,15 +117,16 @@
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.grupopinto.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabEvolucao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabGeral
@@ -140,6 +143,8 @@
             // tabInfoBasica
             // 
             this.tabInfoBasica.BackColor = System.Drawing.Color.LightGray;
+            this.tabInfoBasica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabInfoBasica.Controls.Add(this.pictureBox1);
             this.tabInfoBasica.Controls.Add(this.btnPesquisar);
             this.tabInfoBasica.Controls.Add(this.rchObjetivo);
             this.tabInfoBasica.Controls.Add(this.txtTel);
@@ -186,7 +191,7 @@
             this.rchObjetivo.Enabled = false;
             this.rchObjetivo.Location = new System.Drawing.Point(135, 424);
             this.rchObjetivo.Name = "rchObjetivo";
-            this.rchObjetivo.Size = new System.Drawing.Size(666, 193);
+            this.rchObjetivo.Size = new System.Drawing.Size(666, 139);
             this.rchObjetivo.TabIndex = 22;
             this.rchObjetivo.Text = "";
             // 
@@ -394,7 +399,7 @@
             // 
             // tabPostura
             // 
-            this.tabPostura.BackColor = System.Drawing.Color.LightGray;
+            this.tabPostura.BackColor = System.Drawing.Color.Silver;
             this.tabPostura.Controls.Add(this.btnSalvar);
             this.tabPostura.Controls.Add(this.groupBox11);
             this.tabPostura.Controls.Add(this.groupBox10);
@@ -624,6 +629,55 @@
             this.rbtLateralOmbroEsquerdaMaisAlta.TabStop = true;
             this.rbtLateralOmbroEsquerdaMaisAlta.Text = "Esquerda mais alta";
             this.rbtLateralOmbroEsquerdaMaisAlta.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rbtAnteriorOmbroSimetrica);
+            this.groupBox2.Controls.Add(this.rbtAnteriorOmbroDirAlta);
+            this.groupBox2.Controls.Add(this.rbtAnteriorOmbroEsqAlta);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(189, 99);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(143, 140);
+            this.groupBox2.TabIndex = 38;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ombro";
+            // 
+            // rbtAnteriorOmbroSimetrica
+            // 
+            this.rbtAnteriorOmbroSimetrica.AutoSize = true;
+            this.rbtAnteriorOmbroSimetrica.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtAnteriorOmbroSimetrica.Location = new System.Drawing.Point(6, 19);
+            this.rbtAnteriorOmbroSimetrica.Name = "rbtAnteriorOmbroSimetrica";
+            this.rbtAnteriorOmbroSimetrica.Size = new System.Drawing.Size(68, 17);
+            this.rbtAnteriorOmbroSimetrica.TabIndex = 13;
+            this.rbtAnteriorOmbroSimetrica.TabStop = true;
+            this.rbtAnteriorOmbroSimetrica.Text = "Simétrica";
+            this.rbtAnteriorOmbroSimetrica.UseVisualStyleBackColor = true;
+            // 
+            // rbtAnteriorOmbroDirAlta
+            // 
+            this.rbtAnteriorOmbroDirAlta.AutoSize = true;
+            this.rbtAnteriorOmbroDirAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtAnteriorOmbroDirAlta.Location = new System.Drawing.Point(6, 43);
+            this.rbtAnteriorOmbroDirAlta.Name = "rbtAnteriorOmbroDirAlta";
+            this.rbtAnteriorOmbroDirAlta.Size = new System.Drawing.Size(100, 17);
+            this.rbtAnteriorOmbroDirAlta.TabIndex = 14;
+            this.rbtAnteriorOmbroDirAlta.TabStop = true;
+            this.rbtAnteriorOmbroDirAlta.Text = "Direita mais Alta";
+            this.rbtAnteriorOmbroDirAlta.UseVisualStyleBackColor = true;
+            // 
+            // rbtAnteriorOmbroEsqAlta
+            // 
+            this.rbtAnteriorOmbroEsqAlta.AutoSize = true;
+            this.rbtAnteriorOmbroEsqAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtAnteriorOmbroEsqAlta.Location = new System.Drawing.Point(6, 66);
+            this.rbtAnteriorOmbroEsqAlta.Name = "rbtAnteriorOmbroEsqAlta";
+            this.rbtAnteriorOmbroEsqAlta.Size = new System.Drawing.Size(114, 17);
+            this.rbtAnteriorOmbroEsqAlta.TabIndex = 15;
+            this.rbtAnteriorOmbroEsqAlta.TabStop = true;
+            this.rbtAnteriorOmbroEsqAlta.Text = "Esquerda mais alta";
+            this.rbtAnteriorOmbroEsqAlta.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -857,55 +911,6 @@
             this.rbtAnteriorMamilosEsqAlta.Text = "Esquerda mais alta";
             this.rbtAnteriorMamilosEsqAlta.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rbtAnteriorOmbroSimetrica);
-            this.groupBox2.Controls.Add(this.rbtAnteriorOmbroDirAlta);
-            this.groupBox2.Controls.Add(this.rbtAnteriorOmbroEsqAlta);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(189, 99);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(143, 140);
-            this.groupBox2.TabIndex = 38;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ombro";
-            // 
-            // rbtAnteriorOmbroSimetrica
-            // 
-            this.rbtAnteriorOmbroSimetrica.AutoSize = true;
-            this.rbtAnteriorOmbroSimetrica.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtAnteriorOmbroSimetrica.Location = new System.Drawing.Point(6, 19);
-            this.rbtAnteriorOmbroSimetrica.Name = "rbtAnteriorOmbroSimetrica";
-            this.rbtAnteriorOmbroSimetrica.Size = new System.Drawing.Size(68, 17);
-            this.rbtAnteriorOmbroSimetrica.TabIndex = 13;
-            this.rbtAnteriorOmbroSimetrica.TabStop = true;
-            this.rbtAnteriorOmbroSimetrica.Text = "Simétrica";
-            this.rbtAnteriorOmbroSimetrica.UseVisualStyleBackColor = true;
-            // 
-            // rbtAnteriorOmbroDirAlta
-            // 
-            this.rbtAnteriorOmbroDirAlta.AutoSize = true;
-            this.rbtAnteriorOmbroDirAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtAnteriorOmbroDirAlta.Location = new System.Drawing.Point(6, 43);
-            this.rbtAnteriorOmbroDirAlta.Name = "rbtAnteriorOmbroDirAlta";
-            this.rbtAnteriorOmbroDirAlta.Size = new System.Drawing.Size(100, 17);
-            this.rbtAnteriorOmbroDirAlta.TabIndex = 14;
-            this.rbtAnteriorOmbroDirAlta.TabStop = true;
-            this.rbtAnteriorOmbroDirAlta.Text = "Direita mais Alta";
-            this.rbtAnteriorOmbroDirAlta.UseVisualStyleBackColor = true;
-            // 
-            // rbtAnteriorOmbroEsqAlta
-            // 
-            this.rbtAnteriorOmbroEsqAlta.AutoSize = true;
-            this.rbtAnteriorOmbroEsqAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtAnteriorOmbroEsqAlta.Location = new System.Drawing.Point(6, 66);
-            this.rbtAnteriorOmbroEsqAlta.Name = "rbtAnteriorOmbroEsqAlta";
-            this.rbtAnteriorOmbroEsqAlta.Size = new System.Drawing.Size(114, 17);
-            this.rbtAnteriorOmbroEsqAlta.TabIndex = 15;
-            this.rbtAnteriorOmbroEsqAlta.TabStop = true;
-            this.rbtAnteriorOmbroEsqAlta.Text = "Esquerda mais alta";
-            this.rbtAnteriorOmbroEsqAlta.UseVisualStyleBackColor = true;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rbtAnteriorCabecaSimetrica);
@@ -1014,7 +1019,8 @@
             // 
             // tabEvolucao
             // 
-            this.tabEvolucao.BackColor = System.Drawing.Color.LightGray;
+            this.tabEvolucao.BackColor = System.Drawing.Color.White;
+            this.tabEvolucao.BackgroundImage = global::FichasPilates.Properties.Resources.azul;
             this.tabEvolucao.Controls.Add(this.label14);
             this.tabEvolucao.Controls.Add(this.btnAdicionar);
             this.tabEvolucao.Controls.Add(this.dataGridView1);
@@ -1030,7 +1036,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label14.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label14.Location = new System.Drawing.Point(252, 28);
+            this.label14.Location = new System.Drawing.Point(250, 39);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(213, 24);
             this.label14.TabIndex = 2;
@@ -1058,11 +1064,21 @@
             this.dataGridView1.Size = new System.Drawing.Size(794, 484);
             this.dataGridView1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 569);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1013, 102);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
             // FarmFicha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1039, 708);
             this.Controls.Add(this.tabGeral);
             this.Name = "FarmFicha";
@@ -1081,6 +1097,8 @@
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1091,13 +1109,12 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabEvolucao.ResumeLayout(false);
             this.tabEvolucao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1183,5 +1200,6 @@
         public System.Windows.Forms.DataGridView dataGridView1;
         public System.Windows.Forms.Button btnSalvar;
         public System.Windows.Forms.TabControl tabGeral;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

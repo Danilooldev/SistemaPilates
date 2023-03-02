@@ -90,7 +90,6 @@
   <ItemGroup>
     <Compile Include="Controller\CtrlEvolucao.cs" />
     <Compile Include="Controller\CtrlFicha.cs" />
-    <Compile Include="Controller\CtrlGridEvolucao.cs" />
     <Compile Include="Controller\CtrlNovaFicha.cs" />
     <Compile Include="Controller\CtrlPesquisaPaciente.cs" />
     <Compile Include="Controller\CtrlPrincipal.cs" />
@@ -146,6 +145,7 @@
     <Compile Include="Repositorio\EvolucaoRepository.cs" />
     <Compile Include="Repositorio\FichaRepository.cs" />
     <Compile Include="Repositorio\PosturaRepository.cs" />
+    <Compile Include="Utilitarios\EnumDescricaoListagem.cs" />
     <Compile Include="Utilitarios\ExtensionCheckedListBox.cs" />
     <Compile Include="Utilitarios\EnumPelaDescricao.cs" />
     <Compile Include="Utilitarios\ExtensionRadioButton.cs" />
@@ -172,6 +172,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -198,6 +199,24 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\semfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\semfundo-nome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\semfundo-nome-risco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azul.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

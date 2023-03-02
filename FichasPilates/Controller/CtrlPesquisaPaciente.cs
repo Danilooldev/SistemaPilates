@@ -23,6 +23,8 @@ namespace FichasPilates.Controller
 
             frm.dgvListaPesquisa.DataSource = repositorio.Listar();
 
+            frm.dgvListaPesquisa.Columns[2].Visible = false;
+
         }
         private void DelegarEventos()
         {

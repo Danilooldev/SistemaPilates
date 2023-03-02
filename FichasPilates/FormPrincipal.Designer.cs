@@ -30,15 +30,17 @@
         {
             this.btnNovaFicha = new System.Windows.Forms.Button();
             this.btnBuscarFicha = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnNovaFicha
             // 
             this.btnNovaFicha.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnNovaFicha.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovaFicha.Location = new System.Drawing.Point(151, 180);
+            this.btnNovaFicha.Location = new System.Drawing.Point(112, 289);
             this.btnNovaFicha.Name = "btnNovaFicha";
-            this.btnNovaFicha.Size = new System.Drawing.Size(204, 41);
+            this.btnNovaFicha.Size = new System.Drawing.Size(359, 41);
             this.btnNovaFicha.TabIndex = 0;
             this.btnNovaFicha.Text = "Nova Ficha";
             this.btnNovaFicha.UseVisualStyleBackColor = false;
@@ -48,27 +50,39 @@
             // 
             this.btnBuscarFicha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscarFicha.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBuscarFicha.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnBuscarFicha.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarFicha.Location = new System.Drawing.Point(151, 115);
+            this.btnBuscarFicha.Location = new System.Drawing.Point(112, 233);
             this.btnBuscarFicha.Name = "btnBuscarFicha";
-            this.btnBuscarFicha.Size = new System.Drawing.Size(204, 41);
+            this.btnBuscarFicha.Size = new System.Drawing.Size(359, 41);
             this.btnBuscarFicha.TabIndex = 1;
             this.btnBuscarFicha.Text = "Buscar Ficha";
             this.btnBuscarFicha.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FichasPilates.Properties.Resources.semfundo;
+            this.pictureBox1.Location = new System.Drawing.Point(112, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(359, 215);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(510, 302);
+            this.ClientSize = new System.Drawing.Size(634, 400);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnBuscarFicha);
             this.Controls.Add(this.btnNovaFicha);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudioPilates";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -77,6 +91,7 @@
 
         public System.Windows.Forms.Button btnNovaFicha;
         public System.Windows.Forms.Button btnBuscarFicha;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

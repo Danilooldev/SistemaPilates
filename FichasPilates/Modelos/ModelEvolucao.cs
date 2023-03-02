@@ -1,18 +1,21 @@
 ﻿using FichasPilates.Enumerador;
+using FichasPilates.Utilitarios;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace FichasPilates.Modelos
 {
+    
     public class ModelEvolucao
     {
         // DTO
         public DateTime Data { get; set; }
 
-        public int Id { get; set; }
+        public Int64 Id { get; set; }
 
         public Int64 IdUsuario { get; set; }
 
