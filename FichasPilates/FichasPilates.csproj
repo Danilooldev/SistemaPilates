@@ -148,6 +148,7 @@
     <Compile Include="Utilitarios\EnumDescricaoListagem.cs" />
     <Compile Include="Utilitarios\ExtensionCheckedListBox.cs" />
     <Compile Include="Utilitarios\EnumPelaDescricao.cs" />
+    <Compile Include="Utilitarios\ExtensionKeyPress.cs" />
     <Compile Include="Utilitarios\ExtensionRadioButton.cs" />
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
