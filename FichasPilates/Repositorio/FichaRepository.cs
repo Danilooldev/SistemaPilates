@@ -22,7 +22,9 @@ namespace FichasPilates.Repositorio
         {
             try
             {
-                base.Connection.Execute("SalvarUsuario", modelo, commandType: CommandType.StoredProcedure);
+                var modeloBanco = new ModelNovaFichaDB(modelo);
+
+                base.Connection.Execute("SalvarUsuario", modeloBanco, commandType: CommandType.StoredProcedure);
             }
             catch (SqlException ex)
             {

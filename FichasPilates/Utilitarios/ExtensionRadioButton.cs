@@ -13,7 +13,8 @@ namespace FichasPilates.Utilitarios
 
         public static void SelecionarRadio(this IList<RadioButton> listaButton, int valor)
         {
-            listaButton[valor - 1].Checked = true;
+            if (valor > 0)
+                listaButton[valor - 1].Checked = true;
         }
 
         public static int RadioSelecionado(this IList<RadioButton> listaButton)
