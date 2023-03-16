@@ -36,5 +36,27 @@ namespace FichasPilates.Janelas
         {
 
         }
+
+        private void txtCel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+
+            {
+
+                e.Handled = true;
+
+            }
+        }
+
+        private void txtTel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+
+            {
+
+                e.Handled = true;
+
+            }
+        }
     }
 }
