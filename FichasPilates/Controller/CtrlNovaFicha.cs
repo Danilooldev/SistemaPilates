@@ -102,6 +102,8 @@ namespace FichasPilates.Controller
             MessageBox.Show("Salvo com sucesso!");
 
             LimparTela();
+            frm.Close();
+
         }
     }
 
