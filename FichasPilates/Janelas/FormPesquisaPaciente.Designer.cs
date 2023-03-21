@@ -30,7 +30,6 @@
         {
             this.txtNome = new System.Windows.Forms.TextBox();
             this.dgvListaPesquisa = new System.Windows.Forms.DataGridView();
-            this.btnFiltrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPesquisa)).BeginInit();
             this.SuspendLayout();
@@ -39,7 +38,7 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(111, 24);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(630, 20);
+            this.txtNome.Size = new System.Drawing.Size(804, 20);
             this.txtNome.TabIndex = 1;
             this.txtNome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -53,16 +52,6 @@
             this.dgvListaPesquisa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaPesquisa.Size = new System.Drawing.Size(923, 718);
             this.dgvListaPesquisa.TabIndex = 2;
-            // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(747, 18);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(86, 30);
-            this.btnFiltrar.TabIndex = 3;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -80,7 +69,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 802);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.dgvListaPesquisa);
             this.Controls.Add(this.txtNome);
             this.MaximizeBox = false;
@@ -96,7 +84,6 @@
         #endregion
         public System.Windows.Forms.TextBox txtNome;
         public System.Windows.Forms.DataGridView dgvListaPesquisa;
-        public System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.Label label1;
     }
 }
