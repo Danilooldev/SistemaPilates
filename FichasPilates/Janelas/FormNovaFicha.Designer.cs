@@ -221,7 +221,7 @@
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSalvar.Font = new System.Drawing.Font("Segoe UI Historic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(694, 693);
+            this.btnSalvar.Location = new System.Drawing.Point(694, 603);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(103, 49);
             this.btnSalvar.TabIndex = 17;
@@ -305,7 +305,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FichasPilates.Properties.Resources.pngwing_com;
-            this.ClientSize = new System.Drawing.Size(847, 788);
+            this.ClientSize = new System.Drawing.Size(820, 658);
             this.Controls.Add(this.txtAnamnese);
             this.Controls.Add(this.txtCel);
             this.Controls.Add(this.txtCirurgias);
@@ -337,7 +337,6 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
             this.Name = "FormNovaFicha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nova Ficha";
