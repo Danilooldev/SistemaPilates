@@ -218,7 +218,7 @@
             // txtTel
             // 
             this.txtTel.Enabled = false;
-            this.txtTel.Location = new System.Drawing.Point(116, 170);
+            this.txtTel.Location = new System.Drawing.Point(116, 173);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(166, 20);
             this.txtTel.TabIndex = 21;
@@ -227,7 +227,7 @@
             // 
             this.dteNasc.Enabled = false;
             this.dteNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dteNasc.Location = new System.Drawing.Point(182, 136);
+            this.dteNasc.Location = new System.Drawing.Point(182, 140);
             this.dteNasc.Name = "dteNasc";
             this.dteNasc.Size = new System.Drawing.Size(100, 20);
             this.dteNasc.TabIndex = 20;
@@ -290,7 +290,7 @@
             // txtCel
             // 
             this.txtCel.Enabled = false;
-            this.txtCel.Location = new System.Drawing.Point(345, 170);
+            this.txtCel.Location = new System.Drawing.Point(345, 173);
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(151, 20);
             this.txtCel.TabIndex = 14;
