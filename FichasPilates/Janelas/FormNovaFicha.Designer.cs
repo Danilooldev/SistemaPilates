@@ -45,7 +45,6 @@
             this.rbtFeminino = new System.Windows.Forms.RadioButton();
             this.dteNascimento = new System.Windows.Forms.DateTimePicker();
             this.rchObjetivo = new System.Windows.Forms.RichTextBox();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEnd = new System.Windows.Forms.TextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
@@ -57,7 +56,7 @@
             this.txtCel = new System.Windows.Forms.TextBox();
             this.txtAnamnese = new System.Windows.Forms.TextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNome
@@ -219,17 +218,6 @@
             this.rchObjetivo.TabIndex = 13;
             this.rchObjetivo.Text = "";
             // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSalvar.Font = new System.Drawing.Font("Segoe UI Historic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(694, 512);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(103, 49);
-            this.btnSalvar.TabIndex = 14;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(140, 28);
@@ -307,31 +295,32 @@
             this.btnPesquisar.BackgroundImage = global::FichasPilates.Properties.Resources.lupa;
             this.btnPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPesquisar.Location = new System.Drawing.Point(650, 53);
+            this.btnPesquisar.Location = new System.Drawing.Point(738, 57);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(48, 35);
+            this.btnPesquisar.Size = new System.Drawing.Size(59, 35);
             this.btnPesquisar.TabIndex = 15;
             this.btnPesquisar.UseVisualStyleBackColor = true;
             // 
-            // btnEditar
+            // btnSalvar
             // 
-            this.btnEditar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEditar.Location = new System.Drawing.Point(722, 53);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 35);
-            this.btnEditar.TabIndex = 16;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnSalvar.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnSalvar.BackgroundImage = global::FichasPilates.Properties.Resources.salvar;
+            this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.Font = new System.Drawing.Font("Segoe UI Historic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(694, 507);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(103, 48);
+            this.btnSalvar.TabIndex = 14;
+            this.btnSalvar.Text = "\r\n";
+            this.btnSalvar.UseVisualStyleBackColor = false;
             // 
             // FormNovaFicha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(809, 564);
-            this.Controls.Add(this.btnEditar);
+            this.ClientSize = new System.Drawing.Size(814, 567);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtAnamnese);
             this.Controls.Add(this.txtCel);
@@ -403,6 +392,5 @@
         public System.Windows.Forms.TextBox txtNome;
         public System.Windows.Forms.TextBox txtEnd;
         public System.Windows.Forms.Button btnPesquisar;
-        public System.Windows.Forms.Button btnEditar;
     }
 }

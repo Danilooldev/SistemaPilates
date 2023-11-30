@@ -48,7 +48,7 @@ namespace FichasPilates.Controller
         private void DelegarEventos()
         {
             frm.btnSalvar.Click += BtnSalvar_Click;
-            frm.btnEditar.Click += BtnEditar_Click;
+           
             frm.btnPesquisar.Click += BtnPesquisar_Click;
 
         }
