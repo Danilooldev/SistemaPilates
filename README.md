@@ -1,9 +1,11 @@
 # Projeto
+
 StudioPilates
 - 
 # Tecnologias
+
 C#
-MySql
+SQLserve
 Dapper
 - 
 # Resumo do projeto
