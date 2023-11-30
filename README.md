@@ -1,9 +1,7 @@
 # Projeto
-
 StudioPilates
 - 
 # Tecnologias
-
 C#
 SQLserve
 Dapper
