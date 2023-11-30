@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FarmFicha));
             this.tabGeral = new System.Windows.Forms.TabControl();
             this.tabInfoBasica = new System.Windows.Forms.TabPage();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.rchObjetivo = new System.Windows.Forms.RichTextBox();
@@ -147,6 +148,7 @@
             // 
             this.tabInfoBasica.BackColor = System.Drawing.Color.LightGray;
             this.tabInfoBasica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabInfoBasica.Controls.Add(this.btnExcluir);
             this.tabInfoBasica.Controls.Add(this.pictureBox1);
             this.tabInfoBasica.Controls.Add(this.btnPesquisar);
             this.tabInfoBasica.Controls.Add(this.rchObjetivo);
@@ -179,6 +181,17 @@
             this.tabInfoBasica.TabIndex = 0;
             this.tabInfoBasica.Text = "Ficha";
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.Firebrick;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluir.Location = new System.Drawing.Point(840, 74);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(87, 29);
+            this.btnExcluir.TabIndex = 26;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -196,9 +209,9 @@
             this.btnPesquisar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.Location = new System.Drawing.Point(727, 72);
+            this.btnPesquisar.Location = new System.Drawing.Point(740, 72);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(74, 30);
+            this.btnPesquisar.Size = new System.Drawing.Size(84, 30);
             this.btnPesquisar.TabIndex = 23;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -1302,5 +1315,6 @@
         public System.Windows.Forms.Button btnSalvar;
         public System.Windows.Forms.TabControl tabGeral;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Button btnExcluir;
     }
 }

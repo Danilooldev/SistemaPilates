@@ -56,6 +56,8 @@
             this.txtCirurgias = new System.Windows.Forms.TextBox();
             this.txtCel = new System.Windows.Forms.TextBox();
             this.txtAnamnese = new System.Windows.Forms.TextBox();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNome
@@ -184,7 +186,7 @@
             this.rbtMasculino.Location = new System.Drawing.Point(145, 72);
             this.rbtMasculino.Name = "rbtMasculino";
             this.rbtMasculino.Size = new System.Drawing.Size(95, 20);
-            this.rbtMasculino.TabIndex = 13;
+            this.rbtMasculino.TabIndex = 1;
             this.rbtMasculino.TabStop = true;
             this.rbtMasculino.Text = "Masculino";
             this.rbtMasculino.UseVisualStyleBackColor = true;
@@ -195,7 +197,7 @@
             this.rbtFeminino.Location = new System.Drawing.Point(257, 72);
             this.rbtFeminino.Name = "rbtFeminino";
             this.rbtFeminino.Size = new System.Drawing.Size(88, 20);
-            this.rbtFeminino.TabIndex = 14;
+            this.rbtFeminino.TabIndex = 2;
             this.rbtFeminino.TabStop = true;
             this.rbtFeminino.Text = "Feminino";
             this.rbtFeminino.UseVisualStyleBackColor = true;
@@ -207,24 +209,24 @@
             this.dteNascimento.Location = new System.Drawing.Point(145, 111);
             this.dteNascimento.Name = "dteNascimento";
             this.dteNascimento.Size = new System.Drawing.Size(200, 22);
-            this.dteNascimento.TabIndex = 15;
+            this.dteNascimento.TabIndex = 3;
             // 
             // rchObjetivo
             // 
             this.rchObjetivo.Location = new System.Drawing.Point(140, 422);
             this.rchObjetivo.Name = "rchObjetivo";
-            this.rchObjetivo.Size = new System.Drawing.Size(657, 166);
-            this.rchObjetivo.TabIndex = 16;
+            this.rchObjetivo.Size = new System.Drawing.Size(657, 75);
+            this.rchObjetivo.TabIndex = 13;
             this.rchObjetivo.Text = "";
             // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSalvar.Font = new System.Drawing.Font("Segoe UI Historic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(694, 603);
+            this.btnSalvar.Location = new System.Drawing.Point(694, 512);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(103, 49);
-            this.btnSalvar.TabIndex = 17;
+            this.btnSalvar.TabIndex = 14;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
@@ -233,21 +235,21 @@
             this.txtNome.Location = new System.Drawing.Point(140, 28);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(657, 22);
-            this.txtNome.TabIndex = 18;
+            this.txtNome.TabIndex = 0;
             // 
             // txtEnd
             // 
             this.txtEnd.Location = new System.Drawing.Point(140, 165);
             this.txtEnd.Name = "txtEnd";
             this.txtEnd.Size = new System.Drawing.Size(657, 22);
-            this.txtEnd.TabIndex = 19;
+            this.txtEnd.TabIndex = 4;
             // 
             // txtTel
             // 
             this.txtTel.Location = new System.Drawing.Point(374, 193);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(158, 22);
-            this.txtTel.TabIndex = 20;
+            this.txtTel.TabIndex = 6;
             this.txtTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTel_KeyPress);
             // 
             // txtProfissao
@@ -255,42 +257,42 @@
             this.txtProfissao.Location = new System.Drawing.Point(140, 226);
             this.txtProfissao.Name = "txtProfissao";
             this.txtProfissao.Size = new System.Drawing.Size(657, 22);
-            this.txtProfissao.TabIndex = 21;
+            this.txtProfissao.TabIndex = 7;
             // 
             // txtQueixaPrincipal
             // 
             this.txtQueixaPrincipal.Location = new System.Drawing.Point(140, 349);
             this.txtQueixaPrincipal.Name = "txtQueixaPrincipal";
             this.txtQueixaPrincipal.Size = new System.Drawing.Size(657, 22);
-            this.txtQueixaPrincipal.TabIndex = 22;
+            this.txtQueixaPrincipal.TabIndex = 11;
             // 
             // txtPatologia
             // 
             this.txtPatologia.Location = new System.Drawing.Point(140, 256);
             this.txtPatologia.Name = "txtPatologia";
             this.txtPatologia.Size = new System.Drawing.Size(657, 22);
-            this.txtPatologia.TabIndex = 23;
+            this.txtPatologia.TabIndex = 8;
             // 
             // txtExames
             // 
             this.txtExames.Location = new System.Drawing.Point(140, 316);
             this.txtExames.Name = "txtExames";
             this.txtExames.Size = new System.Drawing.Size(657, 22);
-            this.txtExames.TabIndex = 24;
+            this.txtExames.TabIndex = 10;
             // 
             // txtCirurgias
             // 
             this.txtCirurgias.Location = new System.Drawing.Point(140, 288);
             this.txtCirurgias.Name = "txtCirurgias";
             this.txtCirurgias.Size = new System.Drawing.Size(657, 22);
-            this.txtCirurgias.TabIndex = 25;
+            this.txtCirurgias.TabIndex = 9;
             // 
             // txtCel
             // 
             this.txtCel.Location = new System.Drawing.Point(140, 193);
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(158, 22);
-            this.txtCel.TabIndex = 26;
+            this.txtCel.TabIndex = 5;
             this.txtCel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCel_KeyPress);
             // 
             // txtAnamnese
@@ -298,14 +300,39 @@
             this.txtAnamnese.Location = new System.Drawing.Point(140, 382);
             this.txtAnamnese.Name = "txtAnamnese";
             this.txtAnamnese.Size = new System.Drawing.Size(657, 22);
-            this.txtAnamnese.TabIndex = 27;
+            this.txtAnamnese.TabIndex = 12;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackgroundImage = global::FichasPilates.Properties.Resources.lupa;
+            this.btnPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesquisar.Location = new System.Drawing.Point(650, 53);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(48, 35);
+            this.btnPesquisar.TabIndex = 15;
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnEditar.Location = new System.Drawing.Point(722, 53);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 35);
+            this.btnEditar.TabIndex = 16;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
             // 
             // FormNovaFicha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FichasPilates.Properties.Resources.pngwing_com;
-            this.ClientSize = new System.Drawing.Size(820, 658);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(809, 564);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtAnamnese);
             this.Controls.Add(this.txtCel);
             this.Controls.Add(this.txtCirurgias);
@@ -335,7 +362,7 @@
             this.Controls.Add(this.lblSexo);
             this.Controls.Add(this.lblNome);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormNovaFicha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -375,5 +402,7 @@
         public System.Windows.Forms.Button btnSalvar;
         public System.Windows.Forms.TextBox txtNome;
         public System.Windows.Forms.TextBox txtEnd;
+        public System.Windows.Forms.Button btnPesquisar;
+        public System.Windows.Forms.Button btnEditar;
     }
 }

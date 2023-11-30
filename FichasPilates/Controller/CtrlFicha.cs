@@ -5,12 +5,15 @@ using FichasPilates.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.SqlClient;
 using System.Drawing.Text;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using System.Windows.Forms;
 
 namespace FichasPilates.Controller
@@ -21,6 +24,8 @@ namespace FichasPilates.Controller
         public EvolucaoRepository repositorievolucao = new EvolucaoRepository();
 
         private PosturaRepository repositoriopostura = new PosturaRepository();
+
+        private FichaRepository repositorioFicha = new FichaRepository();
 
 
         private IList<RadioButton> anteriorCabeca = new List<RadioButton>();
@@ -78,13 +83,71 @@ namespace FichasPilates.Controller
 
         }
 
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            Retorno retorno;
 
+            if (idUsuario != 0)
+            {
+                retorno = repositorievolucao.DeletarEvolucaoDoUsuario(idUsuario);
+
+                if (retorno.Success)
+                    retorno = repositoriopostura.DeletarPosturaDoUsuario(idUsuario);
+
+                if (retorno.Success)
+                    repositorioFicha.ExcluirUsuario(idUsuario);
+
+
+                if (!retorno.Success)
+                {
+                    MessageBox.Show(retorno.Message);
+
+                    // captura em algum log
+                    var erro = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") + " " + retorno.ErrorMessage + Environment.NewLine;
+
+                    if (!Directory.Exists("Errors"))
+                        Directory.CreateDirectory("Errors");
+
+                    File.AppendAllText(Environment.CurrentDirectory + "/Errors/Log.txt", erro);
+
+                }
+                else
+                {
+                    MessageBox.Show("Ficha excluída com sucesso!");
+
+                    LimparTela();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Selecione um cliente para excluir.");
+            }
+        }
+
+        private void LimparTela()
+        {
+            frm.txtPaciente.Text = null;
+            frm.txtCel.Text = null;
+            frm.txtCirurgias.Text = null;
+            frm.txtSexo.Text = null;
+            frm.txtExames.Text = null;
+            frm.rchObjetivo.Text = null;
+            frm.txtPatologia.Text = null;
+            frm.txtProfissao.Text = null;
+            frm.txtQueixaPrincipal.Text = null;
+            frm.txtTel.Text = null;
+            frm.dteNasc.Value = DateTime.Now;
+
+        }
 
         private void DelegarEvento()
         {
             frm.btnAdicionar.Click += BtnAdicionar_Click;
             frm.btnPesquisar.Click += BtnPesquiar;
             frm.btnSalvar.Click += BtnSalvar_Click;
+
+            frm.btnExcluir.Click += buttonExcluir_Click;
 
             frm.dataGridView1.DoubleClick += DataGridView1_DoubleClick;
 
@@ -120,6 +183,7 @@ namespace FichasPilates.Controller
                 ObjetoPAraAbaEvolucao(idUsuario);
 
         }
+
 
 
         private void ObjetoParaTela(ModelNovaFicha m)

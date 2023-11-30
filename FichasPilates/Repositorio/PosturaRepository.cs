@@ -31,7 +31,32 @@ namespace FichasPilates.Repositorio
             }
         }
 
+        public Retorno DeletarPosturaDoUsuario(long id)
+        {
+            try
+            {
+                var parametro = new DynamicParameters();
 
+                parametro.Add("@Id", id);
 
+                base.Connection.Execute($"DELETE FROM Postura WHERE Id = @Id", parametro);
+
+                return new Retorno
+                {
+                    Message = "Usuário deletado com sucesso",
+                    Success = true
+
+                };
+            }
+            catch (SqlException ex)
+            {
+                return new Retorno
+                {
+                    Message = "Erro ao deletar usuário",
+                    Success = false,
+                    ErrorMessage = ex.Message
+                };
+            }
+        }
     }
 }

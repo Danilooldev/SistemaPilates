@@ -32,6 +32,10 @@ namespace FichasPilates.Repositorio
                 case "Oracle":
                     Connection = new MySqlConnection(ConfigurationManager.AppSettings["Oracle"]);
                     break;
+
+                case "SqlServer2":
+                    Connection = new SqlConnection(ConfigurationManager.AppSettings["SqlServer2"]);
+                    break;
             }
         }
     }

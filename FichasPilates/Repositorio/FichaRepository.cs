@@ -34,7 +34,53 @@ namespace FichasPilates.Repositorio
 
         public ModelNovaFicha CarregarFichaPeloId(int id)
         {
-            return base.Connection.Query<ModelNovaFicha>($"SELECT * FROM Usuario where id = {id}").Single();
+            try
+            {
+                return base.Connection.Query<ModelNovaFicha>($"SELECT * FROM Usuario where id = {id}").Single();
+                //did query not unique result: 3
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
         }
+
+        public Retorno ExcluirUsuario(long id)
+        {
+            try
+            {
+                var parametro = new DynamicParameters();
+
+                parametro.Add("@Id", id);
+
+                base.Connection.Execute($"DELETE FROM Usuario WHERE Id = @Id", parametro);
+
+                return new Retorno
+                {
+                    Message = "Usuário deletado com sucesso",
+                    Success = true
+
+                };
+            }
+            catch (SqlException ex)
+            {
+                return new Retorno
+                {
+                    Message = "Erro ao deletar usuário",
+                    Success = false,
+                    ErrorMessage = ex.Message
+                };
+            }
+        }
+    }
+
+    public class Retorno
+    {
+        public string Message { get; set; }
+
+        public bool Success { get; set; }
+
+        public string ErrorMessage { get; set; }
+
     }
 }
