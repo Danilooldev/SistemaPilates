@@ -1,13 +1,13 @@
 # Projeto
-StudioPilates
+- StudioPilates
 - 
 # Tecnologias
-C#
-SQLserve
-Dapper
+- C#
+- SQLserve
+- Dapper
 - 
 # Resumo do projeto
-O projeto consiste na ideia de criar uma ficha de pacientes com características exclusivas para o profissional de pilates, incluindo nessa ficha histórico de postura e evolução do paciente.
+- O projeto consiste na ideia de criar uma ficha de pacientes com características exclusivas para o profissional de pilates, incluindo nessa ficha histórico de postura e evolução do paciente.
 - 
 # Img
 ![image](https://github.com/Danilooldev/SistemaPilates/assets/116775077/ed2782cb-8495-4160-b282-43c4b36c7605)
